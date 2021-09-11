@@ -70,6 +70,8 @@
             "PMS_DESC": "Sends a private message to the replied person in group.",
             "NEED_REPLY": "*You must reply to any user's message!*",
             "NEED_WORDS": "*Must enter some words!*",
+            "NEED_BOTH": "*You must enter some words or reply to any message!*",
+            "STAM_DESC": "Sends the entered message or replied message to all members in the group.",
             "SUC_PMS": "*Message Sent Successfully ✅*",
             "MSG": "Message",
             "FRM": "From:"
