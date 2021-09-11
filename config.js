@@ -18,6 +18,7 @@ module.exports = {
     AUTOBIO: process.env.AUTO_BIO === undefined ? 'false' : process.env.AUTO_BIO,
     SESSION: process.env.ALEXA_SESSION === undefined ? '' : process.env.ALEXA_SESSION,
     BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? false : process.env.BLOCK_CHAT,
+    FULLALEXA: process.env.FULL_ALEXA === undefined ? 'false' : process.env.FULL_ALEXA,
     LANG: process.env.LANGUAGE === undefined ? 'EN' : process.env.LANGUAGE.toUpperCase(),
     ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'default' : process.env.ALIVE_MESSAGE,
     ALIVE_LOGO: process.env.ALIVE_LOGO === undefined ? 'https://i.ibb.co/hdb4VFH/IMG-20210516-WA0008.jpg' : process.env.ALIVE_LOGO,
