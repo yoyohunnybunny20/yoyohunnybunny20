@@ -71,6 +71,8 @@
             "PMS_DESC": "Mengirim pesan pribadi ke orang yang dibalas dalam grup.",
             "NEED_REPLY": "*Anda harus membalas pesan pengguna mana pun!*",
             "NEED_WORDS": "*Harus memasukkan beberapa kata!*",
+            "NEED_BOTH": "*Anda harus memasukkan beberapa kata atau membalas pesan apa pun!*",
+            "STAM_DESC": "Mengirim pesan yang dimasukkan atau pesan balasan ke semua anggota dalam grup.",
             "SUC_PMS": "*Pesan Berhasil Terkirim ✅*",
             "MSG": "Pesan",
             "FRM": "Dari:"
