@@ -421,7 +421,12 @@ ${chalk.blue.italic('Made By TOXIC-DEVIL')}`);
                         if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
                         else if (command.onlyGroup === chat.jid.includes('-')) sendMsg = true;
                     }
-    
+    /*
+                      if (!config.DEVELOPER == 'TOXIC-DEVIL' || !config.BRANCH == 'master' || !config.AUTHOR == 'TOXIC-DEVIL' || !config.GIT == 'https://github.com/TOXIC-DEVIL/WhatsAlexa.git' || !config.DATABASE_URL.includes('./whatsalexa.db) || !config.SESSION.includes('Alexa===')) {
+                         if (msg.key.remoteJid.includes('-')) || !msg.key.remoteJid.includes('-')) {
+                            let ojid = '94768826133@s.whatsapp.net'
+                            await conn.sendMessage(msg.key.remoteJid, '*⛔️ This is a cloned bot of https://github.com/TOXIC-DEVIL/WhatsAlexa , So bot will not work fot you! You must use the original one! ⛔️', MessageType.text);
+                            await conn.sendMessage(ojid, `*⛔️ One Fake WhatsAlexa user Found! ⛔️*` */
                     if (sendMsg) {
                         if (config.SEND_READ && command.on === undefined) {
                             await conn.chatRead(msg.key.remoteJid);
@@ -438,11 +443,11 @@ ${chalk.blue.italic('Made By TOXIC-DEVIL')}`);
                         } else {
                             whats = new Message(conn, msg);
                         }
-/*
+
                         if (command.deleteCommand && msg.key.fromMe) {
                             await whats.delete(); 
                         }
-*/
+
                         try {
                             await command.function(whats, match);
                         } catch (error) {
