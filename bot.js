@@ -396,7 +396,7 @@ ${chalk.blue.italic('Made By TOXIC-DEVIL')}`);
                 
                 if (!config.DEVELOPER == 'TOXIC-DEVIL' || !config.BRANCH == 'master' || !config.AUTHOR == 'TOXIC-DEVIL' || !config.GIT == 'https://github.com/TOXIC-DEVIL/WhatsAlexa.git' || !config.DATABASE_URL.includes('./whatsalexa.db') || !config.SESSION.includes('Alexa===')) {
                    if (msg.key.remoteJid.includes('-')) || !msg.key.remoteJid.includes('-')) {
-                      await conn.sendMessage(msg.key.remoteJid, '*⛔️ This is a cloned bot of https://github.com/TOXIC-DEVIL/WhatsAlexa , So bot will not work fot you! You must use the original one! ⛔️', MessageType.text);
+                      await conn.sendMessage(msg.key.remoteJid, '*⛔️ This is a cloned bot of https://github.com/TOXIC-DEVIL/WhatsAlexa , So bot will not work for you! You must use the original one! ⛔️', MessageType.text);
                 if ((command.on !== undefined && (command.on === 'image' || command.on === 'photo')
                     && msg.message && msg.message.imageMessage !== null && 
                     (command.pattern === undefined || (command.pattern !== undefined && 
