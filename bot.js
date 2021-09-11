@@ -462,7 +462,7 @@ ${chalk.blue.italic('Made By TOXIC-DEVIL')}`);
     } catch {
         if (!nodb) {
             console.log(chalk.red.bold('Loading Old Version Session...'))
-            WhatsAsenaCN.loadAuthInfo(Session.deCrypt(config.SESSION)); 
+            conn.loadAuthInfo(Session.deCrypt(config.SESSION)); 
             try {
                 await conn.connect();
             } catch {
