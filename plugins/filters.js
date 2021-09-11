@@ -1,5 +1,6 @@
 let WhatsAlexa = require('../events');
 let {MessageType} = require('@adiwajshing/baileys');
+let fs = require('fs')
 let FilterDb = require('./sql/filters');
 let Language = require('../language');
 let Lang = Language.getString('filters');
