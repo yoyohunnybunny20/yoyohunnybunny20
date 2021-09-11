@@ -279,37 +279,6 @@ ${chalk.blue.italic('Made By TOXIC-DEVIL')}`);
         }
     }, 7890);
     
-    setInterval(async () => { 
-        var getGMTh = new Date().getHours()
-        var getGMTm = new Date().getMinutes()
-         
-        while (getGMTh == 19 && getGMTm == 1) {
-            var announce = ''
-            if (config.LANG == 'EN') announce = '📢 New Version ( V1 Public Stable ) Coming Soon ⏱ Are You Excited?? 🤗 Stay Turned... 😍'
-            if (config.LANG == 'ML') announce = '📢 പുതിയ പതിപ്പ് ( V1 Public Stable ) ഉടൻ വരുന്നു ⏱ നിങ്ങൾ ആവേശഭരിതരാണോ?? 🤗 കാത്തിരിക്കു... 😍'
-            if (config.LANG == 'ID') announce = '📢 Versi Baru ( V1 Public Stable ) Segera Hadir ⏱ Apakah Anda Bersemangat?? 🤗 Tetap Berbalik... 😍'
-            
-            let video = 'https://i.imgur.com/wKBqg7q.gif'
-            let image = ''
-            
-            if (video.includes('http') || video.includes('https')) {
-                var VID = video.split('youtu.be')[1].split(' ')[0].replace('/', '')
-                var yt = ytdl(VID, {filter: format => format.container === 'mp4' && ['720p', '480p', '360p', '240p', '144p'].map(() => true)});
-                yt.pipe(fs.createWriteStream('./' + VID + '.mp4'));
-                yt.on('end', async () => {
-                    return await conn.sendMessage(conn.user.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {caption: announce, mimetype: Mimetype.gif});
-                });
-            } else {
-                if (image.includes('http') || image.includes('https')) {
-                    var imagegen = await axios.get(image, { responseType: 'arraybuffer'})
-                    return await conn.sendMessage(conn.user.jid, Buffer.from(imagegen.data), MessageType.image, { caption: announce })
-                } else {
-                    return await conn.sendMessage(conn.user.jid, announce, MessageType.text)
-                }
-            }
-        }
-    }, 50000);
-    
     conn.on('message-new', async msg => {
         if (msg.key && msg.key.remoteJid == 'status@broadcast') return;
 
