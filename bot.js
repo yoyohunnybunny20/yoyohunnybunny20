@@ -458,13 +458,13 @@ ${chalk.blue.italic('Made By TOXIC-DEVIL')}`);
     });
 
     try {
-        conn.connect();
+        await conn.connect();
     } catch {
         if (!nodb) {
-            console.log(chalk.red.bold('ERROR...'))
-            conn.loadAuthInfo(Session.deCrypt(config.SESSION)); 
+            console.log(chalk.red.bold('Loading Old Version Session...'))
+            WhatsAsenaCN.loadAuthInfo(Session.deCrypt(config.SESSION)); 
             try {
-               conn.connect();
+                await conn.connect();
             } catch {
                 return;
             }
