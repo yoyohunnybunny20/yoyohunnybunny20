@@ -97,7 +97,6 @@ async function Alexa () {
     conn.on('connecting', async () => {
         console.log(`${chalk.green.bold('WhatAlexa')}
 ${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
-
 ${chalk.blue.italic('Made By TOXIC-DEVIL')}`);
     });
     
@@ -138,20 +137,25 @@ ${chalk.blue.italic('Made By TOXIC-DEVIL')}`);
         );
         
          if (config.LANG == 'EN') {
-             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/WhatsAlexa.png"), MessageType.image, { caption: `『 WhatsAlexa 』\n\nHello ${conn.user.name}!\n\n*🆘 General Help For You! 🆘*\n\n🔹 *#alive:* Check if the bot is running.\n\n🔹 *#list:* Shows the complete list of commands.\n\n🔹 *#restart:* It Restarts the bot.\n\n🔹 *#shutdown:* It Shutdown/Turn off the bot.\n\n *⚠ Warning, If you shutdown/turn off, there is no command to turn on the bot So You must got to heroku & turn on the worker. ⚠*.\n\n💫 Thank You For Using WhatsAlexa 💖`});
+             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/WhatsAlexa.png"), MessageType.image, { caption: `『 WhatsAlexa 』\n\nHello ${conn.user.name}!\n\n*🆘 General Help For You! 🆘*\n\n🔹 *#alive:* Check if the bot is running.\n\n🔹 *#list:* Shows the complete list of commands.\n\n🔹 *#restart:* It Restarts the bot.\n\n🔹 *#shutdown:* It Shutdown/Turn off the bot.\n\n *⚠ Warning, If you shutdown/turn off, there is no command to turn on the bot So You must got to heroku & turn on the worker. ⚠*.\n\nThank You For Using WhatsAlexa 💖`});
              
          } else if (config.LANG == 'ID') {
-             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/WhatsAlexa.png"), MessageType.image, { caption: `『 WhatsAlexa 』\n\nHalo ${conn.user.name}!\n\n*🆘 Bantuan umum 🆘*\n\n🔹 *#alive:* Periksa apakah bot sedang berjalan.\n\n🔹 *#list:* Menampilkan daftar lengkap perintah.\n\n🔹 *#restart:* Ini me-restart bot.\n\n🔹 *#shutdown:* Ini Matikan/Matikan bot.\n\n *⚠ Peringatan, Jika Anda mematikan/mematikan, tidak ada perintah untuk menghidupkan bot Jadi Anda harus pergi ke heroku & Nyalakan worker. ⚠*.\n\n💫 Terima Kasih Telah Menggunakan WhatsAlexa 💖`});
+             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/WhatsAlexa.png"), MessageType.image, { caption: `『 WhatsAlexa 』\n\nHalo ${conn.user.name}!\n\n*🆘 Bantuan umum 🆘*\n\n🔹 *#alive:* Periksa apakah bot sedang berjalan.\n\n🔹 *#list:* Menampilkan daftar lengkap perintah.\n\n🔹 *#restart:* Ini me-restart bot.\n\n🔹 *#shutdown:* Ini Matikan/Matikan bot.\n\n *⚠ Peringatan, Jika Anda mematikan/mematikan, tidak ada perintah untuk menghidupkan bot Jadi Anda harus pergi ke heroku & Nyalakan worker. ⚠*.\n\nTerima Kasih Telah Menggunakan WhatsAlexa 💖`});
              
          } else {
-             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/WhatsAlexa.png"), MessageType.image, { caption: `『 WhatsAlexa 』\n\nനമസ്കാരം ${conn.user.name}!\n\n*🆘 പൊതുവായ സഹായം 🆘*\n\n🔹 *#alive:* ബോട്ട് പ്രവർത്തിക്കുന്നുണ്ടോയെന്ന് പരിശോധിക്കുന്നു.\n\n🔹 *#list:* കമാൻഡുകളുടെ പൂർണ്ണ ലിസ്റ്റ് കാണിക്കുന്നു.\n\n🔹 *#restart:* ഇത് ബോട്ടിനെ പുനരാരംഭിപ്പിക്കുന്നു.\n\n🔹 *#shutdown:* ഇത് ഷട്ട്ഡൗൺ/ബോട്ട് ഓഫ് ചെയ്യുന്നു.\n\n *⚠ മുന്നറിയിപ്പ്, നിങ്ങൾ ഷട്ട്ഡൗൺ/ഓഫ് ചെയ്യുകയാണെങ്കിൽ, ബോട്ട് ഓണാക്കാൻ ഒരു കമാൻഡും ഇല്ല അതിനാൽ നിങ്ങൾ Heroku ഇല്പോയി worker ഓൺ ചെയ്യണം ⚠*.\n\n💫 WhatsAlexa ഉപയോഗിച്ചതിന് നന്ദി 💖`});
+             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/WhatsAlexa.png"), MessageType.image, { caption: `『 WhatsAlexa 』\n\nനമസ്കാരം ${conn.user.name}!\n\n*🆘 പൊതുവായ സഹായം 🆘*\n\n🔹 *#alive:* ബോട്ട് പ്രവർത്തിക്കുന്നുണ്ടോയെന്ന് പരിശോധിക്കുന്നു.\n\n🔹 *#list:* കമാൻഡുകളുടെ പൂർണ്ണ ലിസ്റ്റ് കാണിക്കുന്നു.\n\n🔹 *#restart:* ഇത് ബോട്ടിനെ പുനരാരംഭിപ്പിക്കുന്നു.\n\n🔹 *#shutdown:* ഇത് ഷട്ട്ഡൗൺ/ബോട്ട് ഓഫ് ചെയ്യുന്നു.\n\n *⚠ മുന്നറിയിപ്പ്, നിങ്ങൾ ഷട്ട്ഡൗൺ/ഓഫ് ചെയ്യുകയാണെങ്കിൽ, ബോട്ട് ഓണാക്കാൻ ഒരു കമാൻഡും ഇല്ല അതിനാൽ നിങ്ങൾ Heroku ഇല്പോയി worker ഓൺ ചെയ്യണം ⚠*.\n\nWhatsAlexa ഉപയോഗിച്ചതിന് നന്ദി 💖`});
         }
     });
     
+    setInterval(async () => { 
+        var getGMTh = new Date().getHours()
+        var getGMTm = new Date().getMinutes()
+         
+        while (getGMTh == 19 && getGMTm == 1) {
             var announce = ''
-            if (config.LANG == 'EN') announce = '📢 New Version ( V1 Public Stable ) Has released right now 🥳, update now, and explore the whole new Alexa Artificial intelligence Feature & Other fun/useful Commands! 😍\n\n💖 Thank You for using WhatsAlexa 🤗'
-            if (config.LANG == 'ML') announce = '📢 പുതിയ പതിപ്പ് ( V1 Public Stable ) ഇപ്പോൾ പുറത്തിറക്കി 🥳, ഇപ്പോൾ അപ്ഡേറ്റ് ചെയ്യുക, കൂടാതെ പുതിയ Alexa ആർട്ടിഫിഷ്യൽ ഇന്റലിജൻസ് ഫീച്ചറും മറ്റ് രസകരമായ/ഉപയോഗപ്രദമായ കമാൻഡുകളും പര്യവേക്ഷണം ചെയ്യുക! 😍\n\n💖 WhatsAlexa ഉപയോഗിച്ചതിന് നന്ദി 🤗'
-            if (config.LANG == 'ID') announce = '📢 Versi Baru ( V1 Public Stable ) Telah dirilis sekarang 🥳, perbarui sekarang, dan jelajahi Fitur Kecerdasan Buatan Alexa yang baru & Perintah menyenangkan/berguna lainnya! 😍\n\n💖 Terima kasih telah menggunakan WhatsAlexa 🤗'
+            if (config.LANG == 'EN') announce = '📢 New Version ( V5 First Release ) of WhatsAlexa is Here... 🎉🥳'
+            if (config.LANG == 'ML') announce = '📢 WhatsAlexa- യുടെ പുതിയ പതിപ്പ് ( V5 First Release ) ഇതാ... 🎉🥳'
+            if (config.LANG == 'ID') announce = '📢 Versi Baru ( V5 First Release ) dari WhatsAlexa Di Sini... 🎉🥳'
             
             let video = ''
             let image = 'https://i.ibb.co/KGMms2Z/Whats-Alexa.jpg'
@@ -172,7 +176,7 @@ ${chalk.blue.italic('Made By TOXIC-DEVIL')}`);
                 }
             }
         }
-    
+    }, 50000);
     
     setInterval(async () => { 
         if (config.AUTOBIO == 'true') {
@@ -393,7 +397,7 @@ ${chalk.blue.italic('Made By TOXIC-DEVIL')}`);
                 } else {
                     var text_msg = undefined;
                 }
-                
+
                 if ((command.on !== undefined && (command.on === 'image' || command.on === 'photo')
                     && msg.message && msg.message.imageMessage !== null && 
                     (command.pattern === undefined || (command.pattern !== undefined && 
@@ -461,7 +465,7 @@ ${chalk.blue.italic('Made By TOXIC-DEVIL')}`);
         await conn.connect();
     } catch {
         if (!nodb) {
-            console.log(chalk.red.bold('Loading Old Version Session...'))
+            console.log(chalk.red.bold('ERROR...'))
             conn.loadAuthInfo(Session.deCrypt(config.SESSION)); 
             try {
                 await conn.connect();
