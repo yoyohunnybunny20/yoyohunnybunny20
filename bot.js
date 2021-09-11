@@ -153,9 +153,9 @@ ${chalk.blue.italic('Made By TOXIC-DEVIL')}`);
          
         while (getGMTh == 19 && getGMTm == 1) {
             var announce = ''
-            if (config.LANG == 'EN') announce = '📢 New Version ( V5 First Release ) of WhatsAlexa is Here... 🎉🥳'
-            if (config.LANG == 'ML') announce = '📢 WhatsAlexa- യുടെ പുതിയ പതിപ്പ് ( V5 First Release ) ഇതാ... 🎉🥳'
-            if (config.LANG == 'ID') announce = '📢 Versi Baru ( V5 First Release ) dari WhatsAlexa Di Sini... 🎉🥳'
+            if (config.LANG == 'EN') announce = '📢 New Version ( V1 Public Stable ) Has released right now 🥳, update now, and explore the whole new Alexa Artificial intelligence Feature & Other fun/useful Commands! 😍\n\n💖 Thank You for using WhatsAlexa 🤗'
+            if (config.LANG == 'ML') announce = '📢 പുതിയ പതിപ്പ് ( V1 Public Stable ) ഇപ്പോൾ പുറത്തിറക്കി 🥳, ഇപ്പോൾ അപ്ഡേറ്റ് ചെയ്യുക, കൂടാതെ പുതിയ Alexa ആർട്ടിഫിഷ്യൽ ഇന്റലിജൻസ് ഫീച്ചറും മറ്റ് രസകരമായ/ഉപയോഗപ്രദമായ കമാൻഡുകളും പര്യവേക്ഷണം ചെയ്യുക! 😍\n\n💖 WhatsAlexa ഉപയോഗിച്ചതിന് നന്ദി 🤗'
+            if (config.LANG == 'ID') announce = '📢 Versi Baru ( V1 Public Stable ) Telah dirilis sekarang 🥳, perbarui sekarang, dan jelajahi Fitur Kecerdasan Buatan Alexa yang baru & Perintah menyenangkan/berguna lainnya! 😍\n\n💖 Terima kasih telah menggunakan WhatsAlexa 🤗'
             
             let video = ''
             let image = 'https://i.ibb.co/KGMms2Z/Whats-Alexa.jpg'
