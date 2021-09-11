@@ -91,7 +91,6 @@ async function Alexa () {
                 }
             }
         }
-    }
     
     const conn = new WAConnection();
     const Session = new StringSession();
