@@ -168,7 +168,7 @@ WhatsAlexa.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async 
 
 }));
 WhatsAlexa.addCommand({ pattern: 'voicechat$', desc: voicechat_dsc, fromMe: wk }, (async (message, match) => {
-    if (!message.reply_message) return await message.client.sendMessage(message.jid,reply_eva, MessageType.text, { quoted: message.data }) 
+    if (!message.reply_message) return await message.client.sendMessage(message.jid,reply_alexa, MessageType.text, { quoted: message.data }) 
     try {
         const file = await message.client.downloadAndSaveMediaMessage({
             key: {
