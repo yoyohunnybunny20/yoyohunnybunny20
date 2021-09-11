@@ -466,7 +466,7 @@ ${chalk.blue.italic('Made By TOXIC-DEVIL')}`);
             console.log(chalk.red.bold('ERROR...'))
             conn.loadAuthInfo(Session.deCrypt(config.SESSION)); 
             try {
-                await conn.connect();
+                conn.connect();
             } catch {
                 return;
             }
