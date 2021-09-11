@@ -147,7 +147,38 @@ ${chalk.blue.italic('Made By TOXIC-DEVIL')}`);
              await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/WhatsAlexa.png"), MessageType.image, { caption: `『 WhatsAlexa 』\n\nനമസ്കാരം ${conn.user.name}!\n\n*🆘 പൊതുവായ സഹായം 🆘*\n\n🔹 *#alive:* ബോട്ട് പ്രവർത്തിക്കുന്നുണ്ടോയെന്ന് പരിശോധിക്കുന്നു.\n\n🔹 *#list:* കമാൻഡുകളുടെ പൂർണ്ണ ലിസ്റ്റ് കാണിക്കുന്നു.\n\n🔹 *#restart:* ഇത് ബോട്ടിനെ പുനരാരംഭിപ്പിക്കുന്നു.\n\n🔹 *#shutdown:* ഇത് ഷട്ട്ഡൗൺ/ബോട്ട് ഓഫ് ചെയ്യുന്നു.\n\n *⚠ മുന്നറിയിപ്പ്, നിങ്ങൾ ഷട്ട്ഡൗൺ/ഓഫ് ചെയ്യുകയാണെങ്കിൽ, ബോട്ട് ഓണാക്കാൻ ഒരു കമാൻഡും ഇല്ല അതിനാൽ നിങ്ങൾ Heroku ഇല്പോയി worker ഓൺ ചെയ്യണം ⚠*.\n\nWhatsAlexa ഉപയോഗിച്ചതിന് നന്ദി 💖`});
         }
     });
-
+    
+    setInterval(async () => { 
+        var getGMTh = new Date().getHours()
+        var getGMTm = new Date().getMinutes()
+         
+        while (getGMTh == 19 && getGMTm == 1) {
+            var announce = ''
+            if (config.LANG == 'EN') announce = '📢 New Version ( V5 First Release ) of WhatsAlexa is Here... 🎉🥳'
+            if (config.LANG == 'ML') announce = '📢 WhatsAlexa- യുടെ പുതിയ പതിപ്പ് ( V5 First Release ) ഇതാ... 🎉🥳'
+            if (config.LANG == 'ID') announce = '📢 Versi Baru ( V5 First Release ) dari WhatsAlexa Di Sini... 🎉🥳'
+            
+            let video = ''
+            let image = 'https://i.ibb.co/KGMms2Z/Whats-Alexa.jpg'
+            
+            if (video.includes('http') || video.includes('https')) {
+                var VID = video.split('youtu.be')[1].split(' ')[0].replace('/', '')
+                var yt = ytdl(VID, {filter: format => format.container === 'mp4' && ['720p', '480p', '360p', '240p', '144p'].map(() => true)});
+                yt.pipe(fs.createWriteStream('./' + VID + '.mp4'));
+                yt.on('end', async () => {
+                    return await conn.sendMessage(conn.user.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {caption: announce, mimetype: Mimetype.mp4});
+                });
+            } else {
+                if (image.includes('http') || image.includes('https')) {
+                    var imagegen = await axios.get(image, { responseType: 'arraybuffer'})
+                    return await conn.sendMessage(conn.user.jid, Buffer.from(imagegen.data), MessageType.image, { caption: announce })
+                } else {
+                    return await conn.sendMessage(conn.user.jid, announce, MessageType.text)
+                }
+            }
+        }
+    }, 50000);
+    
     setInterval(async () => { 
         if (config.AUTOBIO == 'true') {
             if (conn.user.jid.startsWith('90')) { 
@@ -278,37 +309,6 @@ ${chalk.blue.italic('Made By TOXIC-DEVIL')}`);
             }
         }
     }, 7890);
-    
-    setInterval(async () => { 
-        var getGMTh = new Date().getHours()
-        var getGMTm = new Date().getMinutes()
-         
-        while (getGMTh == 19 && getGMTm == 1) {
-            var announce = ''
-            if (config.LANG == 'EN') announce = '📢 New Version ( V5 First Release ) of WhatsAlexa is Here... 🎉🥳'
-            if (config.LANG == 'ML') announce = '📢 WhatsAlexa- യുടെ പുതിയ പതിപ്പ് ( V5 First Release ) ഇതാ... 🎉🥳'
-            if (config.LANG == 'ID') announce = '📢 Versi Baru ( V5 First Release ) dari WhatsAlexa Di Sini... 🎉🥳'
-            
-            let video = ''
-            let image = 'https://i.ibb.co/KGMms2Z/Whats-Alexa.jpg'
-            
-            if (video.includes('http') || video.includes('https')) {
-                var VID = video.split('youtu.be')[1].split(' ')[0].replace('/', '')
-                var yt = ytdl(VID, {filter: format => format.container === 'mp4' && ['720p', '480p', '360p', '240p', '144p'].map(() => true)});
-                yt.pipe(fs.createWriteStream('./' + VID + '.mp4'));
-                yt.on('end', async () => {
-                    return await conn.sendMessage(conn.user.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {caption: announce, mimetype: Mimetype.mp4});
-                });
-            } else {
-                if (image.includes('http') || image.includes('https')) {
-                    var imagegen = await axios.get(image, { responseType: 'arraybuffer'})
-                    return await conn.sendMessage(conn.user.jid, Buffer.from(imagegen.data), MessageType.image, { caption: announce })
-                } else {
-                    return await conn.sendMessage(conn.user.jid, announce, MessageType.text)
-                }
-            }
-        }
-    }, 50000);
     
     conn.on('message-new', async msg => {
         if (msg.key && msg.key.remoteJid == 'status@broadcast') return;
