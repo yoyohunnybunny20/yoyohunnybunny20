@@ -83,7 +83,7 @@ There are **3 Languages** in this Bot - **English ( US ), Malayalam ( India ), I
 
 ### ❗ Does our number will banned from WhatsApp by Using This Bot?
 
-If you are concerned about that, Then you can just use bot on a [Fake Number](https://youtu.be/v8lGcQp0RjQ). **[Also Read This](https://github.com/TOXIC-DEVIL/WhatsAlexa#-warnings--disclaimers-)**
+If you are concerned about that, Then you can just use bot on a [Fake Number](https://youtu.be/v8lGcQp0RjQ). **[Also Read This](https://github.com/TOXIC-DEVIL/WhatsAlexa#-warning-)**
 
 ### 🔄 Can I Edit this bot?
 
