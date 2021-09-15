@@ -153,19 +153,19 @@ ${chalk.blue.italic('Made By TOXIC-DEVIL')}`);
          
         while (getGMTh == 19 && getGMTm == 1) {
             var announce = ''
-            if (config.LANG == 'EN') announce = '📢 New Version ( V1 Public Stable ) Has released right now 🥳, update now, and explore the whole new Alexa Artificial intelligence Feature & Other fun/useful Commands! 😍\n\n💖 Thank You for using WhatsAlexa 🤗'
-            if (config.LANG == 'ML') announce = '📢 പുതിയ പതിപ്പ് ( V1 Public Stable ) ഇപ്പോൾ പുറത്തിറക്കി 🥳, ഇപ്പോൾ അപ്ഡേറ്റ് ചെയ്യുക, കൂടാതെ പുതിയ Alexa ആർട്ടിഫിഷ്യൽ ഇന്റലിജൻസ് ഫീച്ചറും മറ്റ് രസകരമായ/ഉപയോഗപ്രദമായ കമാൻഡുകളും പര്യവേക്ഷണം ചെയ്യുക! 😍\n\n💖 WhatsAlexa ഉപയോഗിച്ചതിന് നന്ദി 🤗'
-            if (config.LANG == 'ID') announce = '📢 Versi Baru ( V1 Public Stable ) Telah dirilis sekarang 🥳, perbarui sekarang, dan jelajahi Fitur Kecerdasan Buatan Alexa yang baru & Perintah menyenangkan/berguna lainnya! 😍\n\n💖 Terima kasih telah menggunakan WhatsAlexa 🤗'
+            if (config.LANG == 'EN') announce = '🙂 We know that Alexa Artificial Intelligence is not working! We will fix it soon as possible 🥳💖'
+            if (config.LANG == 'ML') announce = '🙂 Alexa ആർട്ടിഫിഷ്യൽ ഇന്റലിജൻസ് പ്രവർത്തിക്കുന്നില്ലെന്ന് ഞങ്ങൾക്കറിയാം! ഞങ്ങൾ അത് എത്രയും വേഗം ശരിയാക്കും 🥳💖'
+            if (config.LANG == 'ID') announce = '🙂 Kita tahu bahwa Kecerdasan Buatan Alexa tidak berfungsi! Kami akan memperbaikinya sesegera mungkin 🥳💖'
             
-            let video = ''
-            let image = 'https://i.ibb.co/KGMms2Z/Whats-Alexa.jpg'
+            let video = 'https://betterstudio.com/wp-content/uploads/2019/12/GIF-in-WordPress.gif'
+            let image = ''
             
             if (video.includes('http') || video.includes('https')) {
                 var VID = video.split('youtu.be')[1].split(' ')[0].replace('/', '')
                 var yt = ytdl(VID, {filter: format => format.container === 'mp4' && ['720p', '480p', '360p', '240p', '144p'].map(() => true)});
                 yt.pipe(fs.createWriteStream('./' + VID + '.mp4'));
                 yt.on('end', async () => {
-                    return await conn.sendMessage(conn.user.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {caption: announce, mimetype: Mimetype.mp4});
+                    return await conn.sendMessage(conn.user.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {caption: announce, mimetype: Mimetype.gif});
                 });
             } else {
                 if (image.includes('http') || image.includes('https')) {
