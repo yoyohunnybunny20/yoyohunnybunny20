@@ -73,15 +73,15 @@ let tdc = '*Made By WhatsAlexa*'
 
     }));
 
-    WhatsAlexa.addCommand({pattern: 'shadow ?(.*)', fromMe: td, dontAddCommandList: true}, (async (message, match) => {
+/*    WhatsAlexa.addCommand({pattern: 'marvel ?(.*)', fromMe: td, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
 
-    var webimage = await axios.get(`https://videfikri.com/api/textmaker/shadowtext/?text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://xteam.xyz/textpro/3davengers?text=Xteam&text2=Api&APIKEY=ab9942f95c09ca89`, { responseType: 'arraybuffer' })
 
   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
 
-    }));
+    })); */
 
     WhatsAlexa.addCommand({pattern: 'metalblue ?(.*)', fromMe: td, dontAddCommandList: true}, (async (message, match) => {
 
