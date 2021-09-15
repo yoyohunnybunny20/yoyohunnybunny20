@@ -48,5 +48,7 @@ module.exports = {
     SUDO: process.env.SUDO === undefined ? false : process.env.SUDO,
     DEBUG: DEBUG,
     SUPPORT: "94768826133-1630756178",
+    XTEAM_API: "ab9942f95c09ca89",
+    SPDF_API: "XO1eBCihbkFLAw15sHobUGhRQAUJObpf9OhyvKpknXvYAr1OA7lxvRuSOQMrUBbn",
     WITAI_API: "TEYMELA6DMC4XB5YM3SPTTQWUUIBKURG"
 };
