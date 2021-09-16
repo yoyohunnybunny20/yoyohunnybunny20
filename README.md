@@ -2,15 +2,10 @@
 - **WhatsAlexa** is a Helper WhatsApp Bot Written with **[Baileys](https://github.com/adiwajshing/baileys)** Which is hosted on **[Heroku Cloud Server](https://heroku.com).** Also Alexa has a **Lot of Commands/Features,** Including **Artificial Intelligence [ AI ] Features/Commands.**
 
 
-<p align="center">
-    <a href="https://github.com/TOXIC-DEVIL">
-        <img
-            src="https://readme-typing-svg.herokuapp.com?size=33&width=1000&lines=Welcome+To+WhatsAlexa...+Thank+You+For+Visiting...."
-            alt="Typing SVG"
-        />
-    </a>
-</p>
 
+<div align="center">
+
+## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Lemon+milk&color=00F719&lines=Welcome+to+WhatsAlexa;WhatsAlexa,+Made+by+TOXIC-DEVIL;WhatsAlexa+has+a+lot+of+Commands;Including+AI+Features;Thank+You+For+Visiting...;Have+a+Nice+Day)](https://git.io/typing-svg)
 
 <div align="center">
   <img src="https://rotf.lol/Whats-Alexa-Gif-TOXIC-DEVIL" width="200" height="200">
