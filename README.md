@@ -1,7 +1,7 @@
 ## 🤔 What is WhatsAlexa?! 🤔
 - **WhatsAlexa** is a Helper WhatsApp Bot Written with **[Baileys](https://github.com/adiwajshing/baileys)** Which is hosted on **[Heroku Cloud Server](https://heroku.com).** Also Alexa has a **Lot of Commands/Features,** Including **Artificial Intelligence [ AI ] Features/Commands.**
 
-# [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Lemon+milk&color=FF7105&lines=Welcome+to+WhatsAlexa;WhatsAlexa,+Made+by+TOXIC-DEVIL;WhatsAlexa+has+a+lot+of+Commands;Including+AI+Features;Thank+You+For+Visiting...;Have+a+Nice+Day)](https://git.io/typing-svg)
+# [![Typing SVG](https://bit.ly/3tSyaJK)](https://git.io/typing-svg)
 
 <div align="center">
   <img src="https://rotf.lol/Whats-Alexa-Gif-TOXIC-DEVIL" width="200" height="200">
