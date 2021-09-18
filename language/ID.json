@@ -252,7 +252,10 @@
             "UNSUC": "*Perhitungan Gagal ❌*\n*Kesalahan:* \n",
             "VALİD": "*Harap Gunakan Seperti Yang Berlaku!* \n*.calc 1 + 2*\n*.calc 3 x 5*\n*.calc 10 / 5*\n*.calc 5 - 2*",
             "PING_DESC": "Mengukur ping anda.",
-            "URL": "Persingkat tautan panjang."
+            "URL": "Persingkat tautan panjang.",
+            "BIT_URL": "Shorten the long link with Bitly URL.",
+            "CUTTLY_URL": "Shorten the long link with Cuttly URL.",
+            "ERROR": "*An Unknown Error Occured!*\n```Try Again Later!```"
         },
         "conventer": {
             "MP4TOAUDİO_DESC": "Mengubah video menjadi suara.",
