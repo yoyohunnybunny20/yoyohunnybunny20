@@ -376,7 +376,6 @@ ${chalk.blue.italic('Made By TOXIC-DEVIL')}`);
           }         
             return;                               
     }
-        
         if (config.BLOCKCHAT !== false) {     
             var abc = config.BLOCKCHAT.split(',');                            
             if(msg.key.remoteJid.includes('-') ? abc.includes(msg.key.remoteJid.split('@')[0]) : abc.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
