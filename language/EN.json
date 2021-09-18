@@ -238,7 +238,10 @@
             "UPLOAD": "Upload",
             "DOWNLOAD": "Download",
             "PING_DESC": "Measures your ping.",
-            "URL": "Shorten the long link."
+            "URL": "Shorten the long link with Tiny URL.",
+            "BIT_URL": "Shorten the long link with Bitly URL.",
+            "CUTTLY_URL": "Shorten the long link with Cuttly URL.",
+            "ERROR": "*An Unknown Error Occured!*\n```Try Again Later!```"
         },
         "conventer": {
             "MP4TOAUDİO_DESC": "Converts video to sound.",
