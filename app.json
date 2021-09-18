@@ -31,6 +31,11 @@
             "required": true,
             "value": "^[#.!]"
         },
+        "PRIVATE_DELETING_MESSAGE": {
+            "description": "if you want to delete the command send by You/User set true else type false.",
+            "required": true,
+            "value": "false"
+        },
         "OWNER_NAME": {
             "description": "Enter the owner name, You must enter your name ( This name will be shown on some commands )",
             "required": false,
