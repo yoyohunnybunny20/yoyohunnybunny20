@@ -14,7 +14,7 @@ let tdc = '*Made By WhatsAlexa*'
 
     var webimage = await axios.get(`https://xteam.xyz/textpro/helloweenfire?text=WhatsAlexa%20%20%20%20%20%20%20%20%20Made%20By%20Toxic%20Devil&APIKEY=${Config.XTEAM_API}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '💻Usage: *#glitch*\nℹ️Desc: It Sends a glitch style image of the text provided.\nYou must enter the heading and subheading seperated by */* in order!.\n\n💻Usage: *#pornhub*\nℹ️Desc: It Sends a blackish orange coloured image of the text provided.\nYou must enter the heading and subheading seperated by */* in order!.\n\n💻Usage: *#sandwriting*\nℹ️Desc: It Sends a sand image of the text provided.\n\n💻Usage: *#blackpink*\nℹ️Desc: It Sends a blackish pink image of the text provided.\n\n💻Usage: *#luxury*\nℹ️Desc: It Sends 3D Golden Luxury Font style image of the text provided.\n\n💻Usage: *#metalgold*\nℹ️Desc: It Sends an image of the gold metal font of text provided.\n\n💻Usage: *#blood*\nℹ️Desc: It Sends a blood image of the text provided.\n\n💻Usage: *#led*\nℹ️Desc: It Sends an image with led font of the text provided.\n\n💻Usage: *#glue*\nℹ️Desc: It Sends an image of the provided text in glue font.\n\n💻Usage: *#snow*\nℹ️Desc: It Sends a snow image of the text provided.\n\n💻Usage: *#cloud*\nℹ️Desc: It Sends a sky image of the text provided\n\n💻Usage: *#metalblue*\nℹ️Desc: It Sends a bule metelled fonted image of the text provided\n\n💻Usage: *#metalpink*\nℹ️Desc: It Sends a pink metalled fonted image of the text provided\n\n💻Usage: *#holographic*\nℹ️Desc: It Sends a 3D Holograhic font image of the text provided\n\n💻Usage: *#minion*\nℹ️Desc: It Sends a minion font image of the text provided\n\n💻Usage: *#wood*\nℹ️Desc: It Sends a wood carved image of the text provided.\n\n💻Usage: *#latte*\nℹ️Desc: It put the text as latte art within a coffee cup.\n\n💻Usage: *#8bit*\nℹ️Desc: Converts the text into an 8bit style image.\nYou must enter the heading and subheading seperated by */* in order!\n\n💻Usage: *#shadow*\nℹ️Desc: Converts the text into shadow themed image.\n\n💻Usage: *#harrypotter*\nℹ️Desc: Converts the text into a harrypotter themed image.\n\n💻Usage: *#sparkling*\nℹ️Desc: Converts the text into a sparkling themed image\nYou must enter the heading and subheading seperated by */* in order!\n\n💻Usage: *#watercolour*\nℹ️Desc: Converts the text into a watercolour themed image.\n\n💻Usage: *#ninjalogo*\nℹ️Desc: Enters the text as the caption for a ninja themed logo.\n\n💻Usage: *#neonlight*\nℹ️Desc: Converts the text into a neonlight themed image.\n\n💻Usage: *#3dtext*\nℹ️Desc: Converts the provided text into a 3D style image.', contextInfo: { forwardingScore: 49, isForwarded: true }, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "▣ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗯𝘆 𝗪𝗵𝗮𝘁𝘀𝗔𝗹𝗲𝘅𝗮 ▣", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./src/image/WhatsAlexa.png')}}}})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '💻Usage: *#glitch*\nℹ️Desc: It Sends a glitch style image of the text provided.\nYou must enter the heading and subheading seperated by */* in order!.\n\n💻Usage: *#pornhub*\nℹ️Desc: It Sends a blackish orange coloured image of the text provided.\nYou must enter the heading and subheading seperated by */* in order!.\n\n💻Usage: *#sandwriting*\nℹ️Desc: It Sends a sand image of the text provided.\n\n💻Usage: *#blackpink*\nℹ️Desc: It Sends a blackish pink image of the text provided.\n\n💻Usage: *#luxury*\nℹ️Desc: It Sends 3D Golden Luxury Font style image of the text provided.\n\n💻Usage: *#metalgold*\nℹ️Desc: It Sends an image of the gold metal font of text provided.\n\n💻Usage: *#blood*\nℹ️Desc: It Sends a blood image of the text provided.\n\n💻Usage: *#led*\nℹ️Desc: It Sends an image with led font of the text provided.\n\n💻Usage: *#glue*\nℹ️Desc: It Sends an image of the provided text in glue font.\n\n💻Usage: *#snow*\nℹ️Desc: It Sends a snow image of the text provided.\n\n💻Usage: *#cloud*\nℹ️Desc: It Sends a sky image of the text provided\n\n💻Usage: *#metalblue*\nℹ️Desc: It Sends a bule metelled fonted image of the text provided\n\n💻Usage: *#metalpink*\nℹ️Desc: It Sends a pink metalled fonted image of the text provided\n\n💻Usage: *#holographic*\nℹ️Desc: It Sends a 3D Holograhic font image of the text provided\n\n💻Usage: *#minion*\nℹ️Desc: It Sends a minion font image of the text provided\n\n💻Usage: *#joker*\nℹ️Desc: It Sends a joker logo of the text provided.\n\n💻Usage: *#flame*\nℹ️Desc: It Converts text to to flaming effect.\n\n💻Usage: *#pokemon*\nℹ️Desc: Converts the text into a pokemon image.\nYou must enter the heading and subheading seperated by */* in order!\n\n💻Usage: *#marvel*\nℹ️Desc: Converts the text into marvel logo image.\n\n💻Usage: *#harrypotter*\nℹ️Desc: Converts the text into a harrypotter themed image.\n\n💻Usage: *#sparkling*\nℹ️Desc: Converts the text into a sparkling themed image\nYou must enter the heading and subheading seperated by */* in order!\n\n💻Usage: *#watercolour*\nℹ️Desc: Converts the text into a watercolour themed image.\n\n💻Usage: *#ninjalogo*\nℹ️Desc: Enters the text as the caption for a ninja themed logo.\n\n💻Usage: *#neonlight*\nℹ️Desc: Converts the text into a neonlight themed image.\n\n💻Usage: *#3dtext*\nℹ️Desc: Converts the provided text into a 3D style image.', contextInfo: { forwardingScore: 49, isForwarded: true }, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "▣ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗯𝘆 𝗪𝗵𝗮𝘁𝘀𝗔𝗹𝗲𝘅𝗮 ▣", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./src/image/WhatsAlexa.png')}}}})
 
     }));
 
@@ -45,18 +45,38 @@ let tdc = '*Made By WhatsAlexa*'
 
     }));
 
-
-    WhatsAlexa.addCommand({pattern: 'wood ?(.*)', fromMe: td, dontAddCommandList: true}, (async (message, match) => {
+    WhatsAlexa.addCommand({pattern: 'flame ?(.*)', fromMe: td, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
 
-    var webimage = await axios.get(`https://videfikri.com/api/textmaker/woodblock/?text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://xteam.xyz/photooxy/flaming?text=${match[1]}&APIKEY=${Config.XTEAM_API}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
 
     }));
 
-    WhatsAlexa.addCommand({pattern: '8bit ?(.*)', fromMe: td, dontAddCommandList: true}, (async (message, match) => {
+
+    WhatsAlexa.addCommand({pattern: 'joker ?(.*)', fromMe: td, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+
+    var webimage = await axios.get(`https://xteam.xyz/textpro/jokerlogo?text=${match[1]}&APIKEY=${Config.XTEAM_API}`, { responseType: 'arraybuffer' })
+
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
+
+    }));
+
+    WhatsAlexa.addCommand({pattern: 'pokemon ?(.*)', fromMe: td, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+  
+    var webimage = await axios.get(`https://xteam.xyz/photooxy/pokemon?text=${match[1]}&APIKEY=${Config.XTEAM_API}`, { responseType: 'arraybuffer' })
+
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
+
+    }));
+
+    WhatsAlexa.addCommand({pattern: 'marvel ?(.*)', fromMe: td, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
   
@@ -67,21 +87,11 @@ let tdc = '*Made By WhatsAlexa*'
         topText = split[0];
 }
 
-    var webimage = await axios.get(`https://videfikri.com/api/textmaker/8bit/?text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
-
-    }));
-
-/*    WhatsAlexa.addCommand({pattern: 'marvel ?(.*)', fromMe: td, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://xteam.xyz/textpro/3davengers?text=Xteam&text2=Api&APIKEY=ab9942f95c09ca89`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://xteam.xyz/textpro/3davengers?text=${topText}&text2=${bottomText}&APIKEY=${Config.XTEAM_API}`, { responseType: 'arraybuffer' })
 
   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
 
-    })); */
+    })); 
 
     WhatsAlexa.addCommand({pattern: 'metalblue ?(.*)', fromMe: td, dontAddCommandList: true}, (async (message, match) => {
 
