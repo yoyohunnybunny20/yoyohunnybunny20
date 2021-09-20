@@ -3,6 +3,7 @@ const path = require("path");
 const events = require("./events");
 const chalk = require('chalk');
 const config = require('./config');
+const pkg = require('./package.json');
 const axios = require('axios');
 const Heroku = require('heroku-client');
 const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
@@ -424,6 +425,15 @@ ${chalk.blue.italic('Made By TOXIC-DEVIL')}`);
                         if (config.SEND_READ && command.on === undefined) {
                             await conn.chatRead(msg.key.remoteJid);
                         }
+                        if (
+                          pkg.name !== 'WhatsAlexa'
+                          || pkg.developer !== 'TOXIC-DEVIL'
+                          || pkg.author !== 'TOXIC-DEVIL'
+                          || pkg.homepage !== 'https://github.com/TOXIC-DEVIL/WhatsAlexa#readme'
+                          || config.DEVELOPER !== 'TOXIC-DEVIL'
+                          || config.AUTHOR !== 'TOXIC-DEVIL'
+                          || config.GIT !== 'https://github.com/TOXIC-DEVIL/WhatsAlexa.git'
+                          ) return await conn.sendMessage(msg.key.remoteJid, '❗️ Fake Bot of WhatsAlexa, Use the Original One! ( https://github.com/TOXIC-DEVIL/WhatsAlexa ) ❗️', MessageType.text);
                         
                         var match = text_msg.match(command.pattern);
                         
