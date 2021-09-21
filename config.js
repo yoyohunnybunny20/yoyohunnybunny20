@@ -14,7 +14,6 @@ module.exports = {
     SESSION: process.env.ALEXA_SESSION === undefined ? '' : process.env.ALEXA_SESSION,
     ANTILINK: process.env.ANTI_LINK === undefined ? 'false' : process.env.ANTI_LINK,
     OWNER: process.env.OWNER_NAME === undefined ? 'TOXIC DEVIL' : process.env.OWNER_NAME,
-    IMGBB_APIKEY: process.env.IMGBB_APIKEY === undefined ? 'e1d740390adbe02e0af736916fac19bf' : process.env.IMGBB_APIKEY,
     XTEAM_API: process.env.XTEAM_APIKEY === undefined ? 'ab9942f95c09ca89' : process.env.XTEAM_APIKEY,
     OWNERNUM: process.env.OWNER_NUMBER === undefined ? '94768826133' : process.env.OWNER_NUMBER,
     AUTOBIO: process.env.AUTO_BIO === undefined ? 'false' : process.env.AUTO_BIO,
