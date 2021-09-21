@@ -10,12 +10,11 @@ DATABASE_URL = process.env.DATABASE_URL === undefined ? './whatsalexa.db' : proc
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 
 module.exports = {
-    VERSION: 'V2 Public Stable',
+    VERSION: 'V1 Public Stable',
     SESSION: process.env.ALEXA_SESSION === undefined ? '' : process.env.ALEXA_SESSION,
     ANTILINK: process.env.ANTI_LINK === undefined ? 'false' : process.env.ANTI_LINK,
     OWNER: process.env.OWNER_NAME === undefined ? 'TOXIC DEVIL' : process.env.OWNER_NAME,
-    XTEAM_API: process.env.XTEAM_APIKEY === undefined ? 'ab9942f95c09ca89' : process.env.XTEAM_APIKEY,
-    OWNERNUM: process.env.OWNER_NUMBER === undefined ? '94768826133' : process.env.OWNER_NUMBER,
+    OWNERNUM: process.env.OWNER_NUMBER === undefined ? '9' : process.env.OWNER_NUMBER,
     AUTOBIO: process.env.AUTO_BIO === undefined ? 'false' : process.env.AUTO_BIO,
     SESSION: process.env.ALEXA_SESSION === undefined ? '' : process.env.ALEXA_SESSION,
     BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? false : process.env.BLOCK_CHAT,
@@ -49,6 +48,7 @@ module.exports = {
     SUDO: process.env.SUDO === undefined ? false : process.env.SUDO,
     DEBUG: DEBUG,
     SUPPORT: "94768826133-1630756178",
+    XTEAM_API: "ab9942f95c09ca89",
     SPDF_API: "XO1eBCihbkFLAw15sHobUGhRQAUJObpf9OhyvKpknXvYAr1OA7lxvRuSOQMrUBbn",
     WITAI_API: "TEYMELA6DMC4XB5YM3SPTTQWUUIBKURG"
 };
