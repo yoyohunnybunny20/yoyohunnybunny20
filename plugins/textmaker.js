@@ -31,7 +31,7 @@ let tdc = '*Made By WhatsAlexa*'
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/ttlogo?text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: tdc})
 
     }));
 
@@ -41,7 +41,7 @@ let tdc = '*Made By WhatsAlexa*'
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/blackpink?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: tdc})
 
     }));
 
@@ -51,7 +51,7 @@ let tdc = '*Made By WhatsAlexa*'
 
     var webimage = await axios.get(`https://xteam.xyz/photooxy/flaming?text=${match[1]}&APIKEY=${Config.XTEAM_API}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: tdc})
 
     }));
 
@@ -62,7 +62,7 @@ let tdc = '*Made By WhatsAlexa*'
 
     var webimage = await axios.get(`https://xteam.xyz/textpro/jokerlogo?text=${match[1]}&APIKEY=${Config.XTEAM_API}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: tdc})
 
     }));
 
@@ -72,7 +72,7 @@ let tdc = '*Made By WhatsAlexa*'
   
     var webimage = await axios.get(`https://xteam.xyz/photooxy/pokemon?text=${match[1]}&APIKEY=${Config.XTEAM_API}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: tdc})
 
     }));
 
@@ -89,7 +89,7 @@ let tdc = '*Made By WhatsAlexa*'
 
     var webimage = await axios.get(`https://xteam.xyz/textpro/3davengers?text=${topText}&text2=${bottomText}&APIKEY=${Config.XTEAM_API}`, { responseType: 'arraybuffer' })
 
-  await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
+  await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: tdc})
 
     })); 
 
@@ -99,7 +99,7 @@ let tdc = '*Made By WhatsAlexa*'
 
     var webimage = await axios.get(`https://xteam.xyz/textpro/glossybluemetal?text=${match[1]}&APIKEY=${Config.XTEAM_API}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: tdc})
 
     }));
 
@@ -109,7 +109,7 @@ let tdc = '*Made By WhatsAlexa*'
 
     var webimage = await axios.get(`https://xteam.xyz/textpro/metalpurpledual?text=${match[1]}&APIKEY=${Config.XTEAM_API}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: tdc})
 
     }));
 
@@ -119,7 +119,7 @@ let tdc = '*Made By WhatsAlexa*'
 
     var webimage = await axios.get(`https://xteam.xyz/textpro/holographic3d?text=${match[1]}&APIKEY=${Config.XTEAM_API}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: tdc})
 
     }));
 
@@ -129,7 +129,7 @@ let tdc = '*Made By WhatsAlexa*'
 
     var webimage = await axios.get(`https://xteam.xyz/textpro/minion3d?text=${match[1]}&APIKEY=${Config.XTEAM_API}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: tdc})
 
     }));
 
@@ -139,7 +139,7 @@ let tdc = '*Made By WhatsAlexa*'
 
     var webimage = await axios.get(`https://xteam.xyz/textpro/helloweenfire?text=${match[1]}&APIKEY=${Config.XTEAM_API}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: tdc})
 
     }));
 
@@ -156,7 +156,7 @@ let tdc = '*Made By WhatsAlexa*'
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/sparkling?text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: tdc})
 
     }));
 
@@ -166,7 +166,7 @@ let tdc = '*Made By WhatsAlexa*'
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/watercolor?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: tdc})
 
     }));
 
@@ -176,7 +176,7 @@ let tdc = '*Made By WhatsAlexa*'
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/gaming?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: tdc})
 
     }));
 
@@ -186,7 +186,7 @@ let tdc = '*Made By WhatsAlexa*'
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/neon_light?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: tdc})
 
     }));
 
@@ -196,7 +196,7 @@ let tdc = '*Made By WhatsAlexa*'
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/sandwriting?text=${match[1]}&APIKEY=${Config.XTEAM_API}`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: tdc})
 
     }));
 
@@ -206,7 +206,7 @@ let tdc = '*Made By WhatsAlexa*'
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/cloudtext?text=${match[1]}&APIKEY=${Config.XTEAM_API}`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: tdc})
 
     }));
 
@@ -223,7 +223,7 @@ let tdc = '*Made By WhatsAlexa*'
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/phblogo?text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: tdc})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: tdc})
 
     }));
 
@@ -233,7 +233,7 @@ let tdc = '*Made By WhatsAlexa*'
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/snowtext?text=${match[1]}&APIKEY=${Config.XTEAM_API}`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: tdc})
 
     }));
 
@@ -243,7 +243,7 @@ let tdc = '*Made By WhatsAlexa*'
 
     var webimage = await axios.get(`https://xteam.xyz/textpro/metaldarkgold?text=${match[1]}&APIKEY=${Config.XTEAM_API}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: tdc})
 
     }));
 
@@ -253,7 +253,7 @@ let tdc = '*Made By WhatsAlexa*'
 
     var webimage = await axios.get(`https://xteam.xyz/textpro/3dglue?text=${match[1]}&APIKEY=${Config.XTEAM_API}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: tdc})
 
     }));
 
@@ -270,7 +270,7 @@ let tdc = '*Made By WhatsAlexa*'
 
     var webimage = await axios.get(`https://xteam.xyz/textpro/realisticvintage?text=${topText}&text2=${bottomText}&APIKEY=${Config.XTEAM_API}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: tdc})
 
     }));
 
@@ -280,7 +280,7 @@ let tdc = '*Made By WhatsAlexa*'
 
     var webimage = await axios.get(`https://xteam.xyz/textpro/3dluxury?text=${match[1]}&APIKEY=${Config.XTEAM_API}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: tdc})
 
     }));
 
@@ -290,7 +290,7 @@ let tdc = '*Made By WhatsAlexa*'
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/bloodontheroastedglass?text=${match[1]}&APIKEY=${Config.XTEAM_API}`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: tdc})
 
     }));
 
@@ -300,7 +300,7 @@ let tdc = '*Made By WhatsAlexa*'
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/blackpink?text=${match[1]}&APIKEY=${Config.XTEAM_API}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: tdc})
 
     }));
 
@@ -310,6 +310,6 @@ let tdc = '*Made By WhatsAlexa*'
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/text3d?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: tdc})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: tdc})
 
     }));
