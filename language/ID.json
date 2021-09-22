@@ -230,6 +230,15 @@
             "AFTER_UPDATE": "*💬 Memulai Ulang WhatsAlexa!*",
             "IN_AF": "*Harap pastikan* ```HEROKU_APP_NAME``` *sama dengan* ```app name```\n*Jika kedua nilai ini sama, harap ubah* ```HEROKU_API_KEY```\n\n_Untuk mengakses pengaturan ini Heroku >> App >> Settings >> Reavel Config Vars ikuti langkahmu._\n_Untuk memperbarui kunci API Anda Heroku >> Account >> API Key Setelah menyegarkan dari bagian tersebut, ganti dengan kunci API lama._"
         },
+        "whois": {
+            "PL_DESC": "Menampilkan data metadata grup atau orang.",
+            "SUB": "*〽 Nama grup:* ",
+            "DES": "*💬 Deskripsi Grup:* ",
+            "OWN": "*👑 Pendiri:* ",
+            "COD": "*✨ Kode Grup Unik:* ",
+            "JİD": "*🎀 Orang JID:* ",
+            "ST": "*🔰 Status Orang:* "
+        },
         "weather": {
             "WEATHER_DESC": "Menunjukkan cuaca.",
             "NEED_LOCATION": "*Silakan tulis lokasinya!*\n*Contoh:* ```.weather Sukoharjo```",
