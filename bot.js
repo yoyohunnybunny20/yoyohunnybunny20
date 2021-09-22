@@ -315,7 +315,7 @@ ${chalk.blue.italic('Made By TOXIC-DEVIL')}`);
         }
     }, 7890);
     
-    var msg = m
+    var msg = 'm'
     
     conn.on("chat-update", async (m) => {
         if (msg.key && msg.key.remoteJid == 'status@broadcast') return;
