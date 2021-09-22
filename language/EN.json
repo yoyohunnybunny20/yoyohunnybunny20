@@ -220,6 +220,15 @@
             "UPDATED_LOCAL": "*✅ Successfully Updated! 🎉*",
             "AFTER_UPDATE": "*💬 WhatsAlexa Restarting Automatically!*"
         },
+        "whois": {
+            "PL_DESC": "Displays metadata data of group or person.",
+            "SUB": "*〽 Group Name:* ",
+            "DES": "*💬 Group Description:* ",
+            "OWN": "*👑 Founder:* ",
+            "COD": "*✨ Unique Group Code:* ",
+            "JİD": "*🎀 Person JID:* ",
+            "ST": "*🔰 Person Status:* "
+        },
         "weather": {
             "WEATHER_DESC": "Shows the weather.",
             "NEED_LOCATION": "* Please write a location!*\n*Example:* ```.weather Bakü```",
