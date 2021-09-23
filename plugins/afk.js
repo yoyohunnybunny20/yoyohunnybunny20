@@ -1,1 +1,97 @@
-function _0x15c9(_0x34ad65,_0x14a139){const _0x21cb9e=_0x21cb();return _0x15c9=function(_0x15c9bd,_0x32bc4e){_0x15c9bd=_0x15c9bd-0x1eb;let _0x45bebe=_0x21cb9e[_0x15c9bd];return _0x45bebe;},_0x15c9(_0x34ad65,_0x14a139);}const _0x37e0c1=_0x15c9;(function(_0xca3522,_0x30ce12){const _0x36ef44=_0x15c9,_0x424868=_0xca3522();while(!![]){try{const _0x4d4d63=-parseInt(_0x36ef44(0x1fa))/0x1+-parseInt(_0x36ef44(0x20d))/0x2*(-parseInt(_0x36ef44(0x213))/0x3)+parseInt(_0x36ef44(0x1f8))/0x4+-parseInt(_0x36ef44(0x1f1))/0x5+parseInt(_0x36ef44(0x1ec))/0x6+-parseInt(_0x36ef44(0x210))/0x7+-parseInt(_0x36ef44(0x212))/0x8;if(_0x4d4d63===_0x30ce12)break;else _0x424868['push'](_0x424868['shift']());}catch(_0xdc493c){_0x424868['push'](_0x424868['shift']());}}}(_0x21cb,0x3adab));let WhatsAlexa=require(_0x37e0c1(0x1f3)),{MessageType}=require('@adiwajshing/baileys'),Config=require(_0x37e0c1(0x202)),Language=require(_0x37e0c1(0x1fc)),Lang=Language[_0x37e0c1(0x20b)]('afk'),AFK={'isAfk':![],'reason':![],'lastseen':0x0};function secondsToHms(_0x1bd1ba){const _0x5c4520=_0x37e0c1;_0x1bd1ba=Number(_0x1bd1ba);var _0x426c72=Math[_0x5c4520(0x1ed)](_0x1bd1ba/0xe10),_0x56a833=Math[_0x5c4520(0x1ed)](_0x1bd1ba%0xe10/0x3c),_0xb44951=Math[_0x5c4520(0x1ed)](_0x1bd1ba%0xe10%0x3c),_0x2129a8=_0x426c72>0x0?_0x426c72+(_0x426c72==0x1?'\x20'+Lang['HOUR']+',\x20':'\x20'+Lang[_0x5c4520(0x218)]+',\x20'):'',_0x47509b=_0x56a833>0x0?_0x56a833+(_0x56a833==0x1?'\x20'+Lang[_0x5c4520(0x1ee)]+',\x20':'\x20'+Lang[_0x5c4520(0x1ee)]+',\x20'):'',_0x1e4e06=_0xb44951>0x0?_0xb44951+(_0xb44951==0x1?'\x20'+Lang['SECOND']:'\x20'+Lang[_0x5c4520(0x20e)]):'';return _0x2129a8+_0x47509b+_0x1e4e06;}function _0x21cb(){const _0x16fd11=['split','LAST_SEEN','startsWith','../config','jid','client','IM_AFK',':*\x20```','lastseen','mention','map','includes','getString','default','46pCUfJO','SECOND','```','1003954IXNNKR','\x20önce```','2944768JofPwR','28623ebbFgA','reason','getTime','user','REASON','HOUR','AFKMSG','2485674GkZELs','floor','MINUTE','isAfk','round','780110DmyeQS','length','../events','IM_NOT_AFK','addCommand','data','AFK_DESC','1519676NCFPQq','AFK_TEXT','105034KQNqXk','reply_message','../language','text','sendMessage'];_0x21cb=function(){return _0x16fd11;};return _0x21cb();}WhatsAlexa['addCommand']({'on':_0x37e0c1(0x1fd),'fromMe':![],'deleteCommand':![]},async(_0x557a3c,_0x2a079f)=>{const _0x420310=_0x37e0c1;if(Config[_0x420310(0x1eb)]==_0x420310(0x20c)){if(AFK['isAfk']&&(!_0x557a3c[_0x420310(0x203)][_0x420310(0x20a)]('-')||_0x557a3c[_0x420310(0x203)][_0x420310(0x20a)]('-')&&(_0x557a3c[_0x420310(0x208)]!==![]&&_0x557a3c['mention']['length']!==0x0||_0x557a3c['reply_message']!==![]))){if(_0x557a3c[_0x420310(0x203)][_0x420310(0x20a)]('-')&&(_0x557a3c[_0x420310(0x208)]!==![]&&_0x557a3c[_0x420310(0x208)][_0x420310(0x1f2)]!==0x0))_0x557a3c[_0x420310(0x208)]['map'](async _0x4ac991=>{const _0x44962f=_0x420310;_0x557a3c[_0x44962f(0x204)]['user'][_0x44962f(0x203)][_0x44962f(0x1ff)]('@')[0x0]===_0x4ac991[_0x44962f(0x1ff)]('@')[0x0]&&await _0x557a3c['client'][_0x44962f(0x1fe)](_0x557a3c[_0x44962f(0x203)],Lang[_0x44962f(0x1f9)]+'\x0a'+(AFK[_0x44962f(0x214)]!==![]?'\x0a*'+Lang[_0x44962f(0x217)]+_0x44962f(0x206)+AFK[_0x44962f(0x214)]+_0x44962f(0x20f):'')+(AFK[_0x44962f(0x207)]!==0x0?'\x0a*'+Lang[_0x44962f(0x200)]+_0x44962f(0x206)+secondsToHms(Math[_0x44962f(0x1f0)](new Date()['getTime']()/0x3e8)-AFK[_0x44962f(0x207)])+'\x20önce```':''),MessageType[_0x44962f(0x1fd)],{'quoted':_0x557a3c[_0x44962f(0x1f6)]});});else _0x557a3c[_0x420310(0x203)][_0x420310(0x20a)]('-')&&_0x557a3c['reply_message']!==![]?_0x557a3c[_0x420310(0x1fb)][_0x420310(0x203)][_0x420310(0x1ff)]('@')[0x0]===_0x557a3c[_0x420310(0x204)][_0x420310(0x216)][_0x420310(0x203)][_0x420310(0x1ff)]('@')[0x0]&&await _0x557a3c['client']['sendMessage'](_0x557a3c[_0x420310(0x203)],Lang['AFK_TEXT']+'\x0a'+(AFK[_0x420310(0x214)]!==![]?'\x0a*'+Lang[_0x420310(0x217)]+_0x420310(0x206)+AFK[_0x420310(0x214)]+'```':'')+(AFK['lastseen']!==0x0?'\x0a*'+Lang[_0x420310(0x200)]+_0x420310(0x206)+secondsToHms(Math[_0x420310(0x1f0)](new Date()[_0x420310(0x215)]()/0x3e8)-AFK[_0x420310(0x207)])+'\x20önce```':''),MessageType[_0x420310(0x1fd)],{'quoted':_0x557a3c[_0x420310(0x1f6)]}):await _0x557a3c[_0x420310(0x204)][_0x420310(0x1fe)](_0x557a3c['jid'],Lang[_0x420310(0x1f9)]+'\x0a'+(AFK[_0x420310(0x214)]!==![]?'\x0a*'+Lang[_0x420310(0x217)]+':*\x20```'+AFK[_0x420310(0x214)]+'```':'')+(AFK[_0x420310(0x207)]!==0x0?'\x0a*'+Lang[_0x420310(0x200)]+_0x420310(0x206)+secondsToHms(Math[_0x420310(0x1f0)](new Date()[_0x420310(0x215)]()/0x3e8)-AFK[_0x420310(0x207)])+_0x420310(0x211):''),MessageType[_0x420310(0x1fd)],{'quoted':_0x557a3c[_0x420310(0x1f6)]});}}else{if(AFK['isAfk']&&(!_0x557a3c[_0x420310(0x203)][_0x420310(0x20a)]('-')||_0x557a3c['jid'][_0x420310(0x20a)]('-')&&(_0x557a3c[_0x420310(0x208)]!==![]&&_0x557a3c[_0x420310(0x208)][_0x420310(0x1f2)]!==0x0||_0x557a3c[_0x420310(0x1fb)]!==![]))){if(_0x557a3c[_0x420310(0x203)]['includes']('-')&&(_0x557a3c[_0x420310(0x208)]!==![]&&_0x557a3c[_0x420310(0x208)][_0x420310(0x1f2)]!==0x0))_0x557a3c[_0x420310(0x208)][_0x420310(0x209)](async _0xbdc68d=>{const _0x2d8fd4=_0x420310;_0x557a3c[_0x2d8fd4(0x204)][_0x2d8fd4(0x216)]['jid'][_0x2d8fd4(0x1ff)]('@')[0x0]===_0xbdc68d[_0x2d8fd4(0x1ff)]('@')[0x0]&&await _0x557a3c[_0x2d8fd4(0x204)][_0x2d8fd4(0x1fe)](_0x557a3c[_0x2d8fd4(0x203)],Config['AFKMSG']+'\x0a'+(AFK[_0x2d8fd4(0x214)]!==![]?'\x0a*'+Lang['REASON']+_0x2d8fd4(0x206)+AFK[_0x2d8fd4(0x214)]+'```':'')+(AFK['lastseen']!==0x0?'\x0a*'+Lang[_0x2d8fd4(0x200)]+':*\x20```'+secondsToHms(Math[_0x2d8fd4(0x1f0)](new Date()['getTime']()/0x3e8)-AFK[_0x2d8fd4(0x207)])+_0x2d8fd4(0x211):''),MessageType['text'],{'quoted':_0x557a3c[_0x2d8fd4(0x1f6)]});});else _0x557a3c[_0x420310(0x203)][_0x420310(0x20a)]('-')&&_0x557a3c[_0x420310(0x1fb)]!==![]?_0x557a3c[_0x420310(0x1fb)][_0x420310(0x203)][_0x420310(0x1ff)]('@')[0x0]===_0x557a3c[_0x420310(0x204)][_0x420310(0x216)][_0x420310(0x203)][_0x420310(0x1ff)]('@')[0x0]&&await _0x557a3c[_0x420310(0x204)]['sendMessage'](_0x557a3c[_0x420310(0x203)],Config['AFKMSG']+'\x0a'+(AFK[_0x420310(0x214)]!==![]?'\x0a*'+Lang[_0x420310(0x217)]+_0x420310(0x206)+AFK[_0x420310(0x214)]+_0x420310(0x20f):'')+(AFK[_0x420310(0x207)]!==0x0?'\x0a*'+Lang[_0x420310(0x200)]+_0x420310(0x206)+secondsToHms(Math[_0x420310(0x1f0)](new Date()['getTime']()/0x3e8)-AFK['lastseen'])+'\x20önce```':''),MessageType[_0x420310(0x1fd)],{'quoted':_0x557a3c['data']}):await _0x557a3c[_0x420310(0x204)][_0x420310(0x1fe)](_0x557a3c['jid'],Config[_0x420310(0x1eb)]+'\x0a'+(AFK[_0x420310(0x214)]!==![]?'\x0a*'+Lang[_0x420310(0x217)]+':*\x20```'+AFK[_0x420310(0x214)]+_0x420310(0x20f):'')+(AFK[_0x420310(0x207)]!==0x0?'\x0a*'+Lang[_0x420310(0x200)]+_0x420310(0x206)+secondsToHms(Math[_0x420310(0x1f0)](new Date()['getTime']()/0x3e8)-AFK[_0x420310(0x207)])+_0x420310(0x211):''),MessageType[_0x420310(0x1fd)],{'quoted':_0x557a3c[_0x420310(0x1f6)]});}}}),WhatsAlexa[_0x37e0c1(0x1f5)]({'on':_0x37e0c1(0x1fd),'fromMe':!![],'deleteCommand':![]},async(_0x1d71bf,_0xcb1d79)=>{const _0x1b774e=_0x37e0c1;AFK[_0x1b774e(0x1ef)]&&!_0x1d71bf['id'][_0x1b774e(0x201)]('3EB0')&&(AFK[_0x1b774e(0x207)]=0x0,AFK[_0x1b774e(0x214)]=![],AFK[_0x1b774e(0x1ef)]=![],await _0x1d71bf[_0x1b774e(0x204)]['sendMessage'](_0x1d71bf['jid'],Lang[_0x1b774e(0x1f4)],MessageType['text'],{'contextInfo':{'forwardingScore':0x3e8,'isForwarded':!![]}}));}),WhatsAlexa['addCommand']({'pattern':'afk\x20?(.*)','fromMe':!![],'deleteCommand':![],'desc':Lang[_0x37e0c1(0x1f7)]},async(_0xde4196,_0x3089c8)=>{const _0x49d5dd=_0x37e0c1;!AFK['isAfk']&&(AFK['lastseen']=Math[_0x49d5dd(0x1f0)](new Date()[_0x49d5dd(0x215)]()/0x3e8),_0x3089c8[0x1]!==''&&(AFK[_0x49d5dd(0x214)]=_0x3089c8[0x1]),AFK['isAfk']=!![],await _0xde4196[_0x49d5dd(0x204)][_0x49d5dd(0x1fe)](_0xde4196[_0x49d5dd(0x203)],Lang[_0x49d5dd(0x205)]+(AFK[_0x49d5dd(0x214)]!==![]?'\x0a*'+Lang[_0x49d5dd(0x217)]+_0x49d5dd(0x206)+AFK[_0x49d5dd(0x214)]+_0x49d5dd(0x20f):''),MessageType[_0x49d5dd(0x1fd)],{'quoted':_0xde4196['data']}));}),module['exports']={'secondsToHms':secondsToHms};
+let WhatsAlexa = require('../events');
+let {MessageType} = require('@adiwajshing/baileys');
+let Config = require('../config');
+let Language = require('../language');
+let Lang = Language.getString('afk');
+
+let AFK = {
+    isAfk: false,
+    reason: false,
+    lastseen: 0
+};
+
+function secondsToHms(d) {
+    d = Number(d);
+    var h = Math.floor(d / 3600);
+    var m = Math.floor(d % 3600 / 60);
+    var s = Math.floor(d % 3600 % 60);
+
+    var hDisplay = h > 0 ? h + (h == 1 ? " " + Lang.HOUR + ", " : " " + Lang.HOUR + ", ") : "";
+    var mDisplay = m > 0 ? m + (m == 1 ? " " + Lang.MINUTE + ", " : " " + Lang.MINUTE + ", ") : "";
+    var sDisplay = s > 0 ? s + (s == 1 ? " " + Lang.SECOND : " " + Lang.SECOND) : "";
+    return hDisplay + mDisplay + sDisplay; 
+}
+
+WhatsAlexa.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {
+    if (Config.AFKMSG == 'default') {
+
+        if (AFK.isAfk && ((!message.jid.includes('-')) || (message.jid.includes('-') && 
+            (( message.mention !== false && message.mention.length !== 0 ) || message.reply_message !== false)))) {
+            if (message.jid.includes('-') && (message.mention !== false && message.mention.length !== 0)) {
+                message.mention.map(async (jid) => {
+                    if (message.client.user.jid.split('@')[0] === jid.split('@')[0]) {
+                        await message.client.sendMessage(message.jid,Lang.AFK_TEXT + '\n' + 
+                        (AFK.reason !== false ? '\n*' + Lang.REASON + ':* ```' + AFK.reason + '```' : '') + 
+                        (AFK.lastseen !== 0 ? '\n*' + Lang.LAST_SEEN + ':* ```' + secondsToHms(Math.round((new Date()).getTime() / 1000) - AFK.lastseen) + ' önce```' : ''), MessageType.text, {quoted: message.data});            
+                    }
+                })
+            } else if (message.jid.includes('-') && message.reply_message !== false) {
+                if (message.reply_message.jid.split('@')[0] === message.client.user.jid.split('@')[0]) {
+                    await message.client.sendMessage(message.jid,Lang.AFK_TEXT + '\n' + 
+                        (AFK.reason !== false ? '\n*' + Lang.REASON + ':* ```' + AFK.reason + '```' : '') + 
+                        (AFK.lastseen !== 0 ? '\n*' + Lang.LAST_SEEN + ':* ```' + secondsToHms(Math.round((new Date()).getTime() / 1000) - AFK.lastseen) + ' önce```' : ''), MessageType.text, {quoted: message.data});
+                }
+            } else {
+                await message.client.sendMessage(message.jid,Lang.AFK_TEXT + '\n' + 
+                (AFK.reason !== false ? '\n*' + Lang.REASON + ':* ```' + AFK.reason + '```' : '') + 
+                (AFK.lastseen !== 0 ? '\n*' + Lang.LAST_SEEN + ':* ```' + secondsToHms(Math.round((new Date()).getTime() / 1000) - AFK.lastseen) + ' önce```' : ''), MessageType.text, {quoted: message.data});
+            }
+        }
+    }
+    else {
+        if (AFK.isAfk && ((!message.jid.includes('-')) || (message.jid.includes('-') && 
+            (( message.mention !== false && message.mention.length !== 0 ) || message.reply_message !== false)))) {
+            if (message.jid.includes('-') && (message.mention !== false && message.mention.length !== 0)) {
+                message.mention.map(async (jid) => {
+                    if (message.client.user.jid.split('@')[0] === jid.split('@')[0]) {
+                        await message.client.sendMessage(message.jid,Config.AFKMSG + '\n' + 
+                        (AFK.reason !== false ? '\n*' + Lang.REASON + ':* ```' + AFK.reason + '```' : '') + 
+                        (AFK.lastseen !== 0 ? '\n*' + Lang.LAST_SEEN + ':* ```' + secondsToHms(Math.round((new Date()).getTime() / 1000) - AFK.lastseen) + ' önce```' : ''), MessageType.text, {quoted: message.data});            
+                    }
+                })
+            } else if (message.jid.includes('-') && message.reply_message !== false) {
+                if (message.reply_message.jid.split('@')[0] === message.client.user.jid.split('@')[0]) {
+                    await message.client.sendMessage(message.jid,Config.AFKMSG + '\n' + 
+                        (AFK.reason !== false ? '\n*' + Lang.REASON + ':* ```' + AFK.reason + '```' : '') + 
+                        (AFK.lastseen !== 0 ? '\n*' + Lang.LAST_SEEN + ':* ```' + secondsToHms(Math.round((new Date()).getTime() / 1000) - AFK.lastseen) + ' önce```' : ''), MessageType.text, {quoted: message.data});
+                }
+            } else {
+                await message.client.sendMessage(message.jid,Config.AFKMSG + '\n' + 
+                (AFK.reason !== false ? '\n*' + Lang.REASON + ':* ```' + AFK.reason + '```' : '') + 
+                (AFK.lastseen !== 0 ? '\n*' + Lang.LAST_SEEN + ':* ```' + secondsToHms(Math.round((new Date()).getTime() / 1000) - AFK.lastseen) + ' önce```' : ''), MessageType.text, {quoted: message.data});
+            }
+        }
+    }
+}));
+
+WhatsAlexa.addCommand({on: 'text', fromMe: true, deleteCommand: false}, (async (message, match) => {
+    if (AFK.isAfk && !message.id.startsWith('3EB0')) {
+        AFK.lastseen = 0;
+        AFK.reason = false;
+        AFK.isAfk = false;
+
+        await message.client.sendMessage(message.jid,Lang.IM_NOT_AFK,MessageType.text, {contextInfo: { forwardingScore: 1000, isForwarded: true }})
+    }
+}));
+
+WhatsAlexa.addCommand({pattern: 'afk ?(.*)', fromMe: true, deleteCommand: false, desc: Lang.AFK_DESC}, (async (message, match) => {     
+    if (!AFK.isAfk) {
+        AFK.lastseen = Math.round((new Date()).getTime() / 1000);
+        if (match[1] !== '') { AFK.reason = match[1]; }
+        AFK.isAfk = true;
+
+        await message.client.sendMessage(message.jid,Lang.IM_AFK + (AFK.reason !== false ? ('\n*' + Lang.REASON +':* ```' + AFK.reason + '```') : ''),MessageType.text, {quoted: message.data});
+    }
+}));
+
+module.exports = { secondsToHms };
