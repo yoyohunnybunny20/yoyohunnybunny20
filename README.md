@@ -59,8 +59,6 @@ If you are concerned about security, you can install it on your own computer. If
   
 You can clear all of them, by **Joining Our Support Group**
 
-**SUPPORT GROUP LINK: https://chat.whatsapp.com/D5urM32BZpd7ZbO9hQV3n3**
-
 ### 📃 How Can I Download the Bot Script?
 
 You Can **[Click Here](https://github.com/TOXIC-DEVIL/WhatsAlexa/archive/refs/heads/master.zip)** To Download The **Bot Script**.. This Script is Free, So **Don't Sell This Script in High Price.**
