@@ -58,6 +58,7 @@ If you are concerned about security, you can install it on your own computer. If
 ### 😵 I am facing some errors/bug in Alexa, I want to request a feature or I have some doubts about Alexa, How can I Clear them all? 
   
 You can clear all of them, by **Joining Our Support Group**
+
 **SUPPORT GROUP LINK: https://chat.whatsapp.com/D5urM32BZpd7ZbO9hQV3n3**
 
 ### 📃 How Can I Download the Bot Script?
