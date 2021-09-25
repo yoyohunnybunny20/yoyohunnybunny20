@@ -21,6 +21,7 @@ const Lang = {
       RESULT = res
     }
 
+
 if (Config.WORKTYPE == 'private') {
 
     WhatsAlexa.addCommand({pattern: 'read ?(.*)', fromMe: true, desc: Lang.OCR_DESC}, (async (message, match) => { 
