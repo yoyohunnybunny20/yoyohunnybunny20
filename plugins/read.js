@@ -13,7 +13,7 @@ if (Config.LANG == 'EN') ocrdesc = "Reads the text on the photo you have replied
 if (Config.LANG == 'ML') ocrdesc = 'നിങ്ങൾ മറുപടി നൽകിയ ഫോട്ടോയിലെ വാചകം വായിക്കുന്നു.', needreply = '*നിങ്ങൾ ഒരു ഫോട്ടോയ്ക്ക് മറുപടി നൽകണം!*', reading = '```മീഡിയ ഡൗൺലോഡ് ചെയ്യുകയും വായിക്കുകയും ചെയ്യുന്നു...```', err = '```എനിക്ക് ഇത് വായിക്കാൻ കഴിഞ്ഞില്ല 😖```\n*പിശക്:*```{}```', res = '*ഭാഷ:* ```{}```\n*ഞാൻ വായിച്ചത് ഇതാ:* ```{}```'
 if (Config.LANG == 'ID') ocrdesc = 'Membaca teks pada foto yang telah Anda balas.', needreply = '*Anda harus Membalas foto!*', reading = '```Media sedang mengunduh & membaca...```', err = '```Saya tidak bisa membaca ini 😖```\n*Error:*```{}```', res = '*Bahasa:* ```{}```\n*Inilah yang saya baca:* ```{}```'
 
-const LANG = {
+const Lang = {
       OCR_DESC = ocrdesc,
       NEED_REPLY = needreply,
       DOWNLOADING = reading,
