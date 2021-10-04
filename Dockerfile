@@ -1,7 +1,7 @@
 # We are just using WhatsAsena's Dockerfile
 # Also the Base
 # But We are not depending Asena for All
-# Therefore WhatsAlexa is not a Fake bot of WhatsAlexa
+# Therefore WhatsAlexa is not a Fake bot of WhatsAsena
 # © WhatsAlexa, Made by TOXIC-DEVIL
 
 FROM fusuf/whatsasena:latest
