@@ -1,14 +1,3 @@
-                                                                                                                                            /*
-Copyright (©);
-
-# Owner : @TOXIC-DEVIL
-# Licensed Under : GPL-3.0
-
-* Permissions & Limitations are listed at :
-#   https://tinyurl.com/Permissions-and-Limitations
-
-© WhatsAlexa - TOXIC DEVIL
-                                                                                                                                            */
 let WhatsAlexa = require('../events');
 let {MessageType} = require('@adiwajshing/baileys');
 let Config = require('../config');
