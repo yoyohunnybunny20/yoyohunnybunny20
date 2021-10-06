@@ -1,5 +1,5 @@
                                                                                                                                                                                                                                                     /*
-!!! PERMISSIONS ARE LIMITATIONS NOT IN LICENSE AND IN LICENSE ARE MENTIONED BELOW SO YOU MUST ACCEPT THESE PERMISSIONS AND LIMITATIONS WHILE MODIFYING OR EDITING THE ROPO !!!
+!!! PERMISSIONS AND LIMITATIONS NOT IN LICENSE AND IN LICENSE ARE MENTIONED BELOW AND YOU MUST ACCEPT THESE PERMISSIONS AND LIMITATIONS WHILE MODIFYING OR EDITING THE ROPO !!!
 
 ================================
 
@@ -18,6 +18,8 @@
 # × Credits
 
 ================================
+***************************************
+================================================================================================
 
 ««« EXPLANATIONS »»»
 
@@ -112,6 +114,5 @@
   tersebut memiliki hak cipta oleh pemiliknya dan yang tidak menghapus kredit/teks tersebut
   saat mengkode ulang/Mengedit Repositori/Barang ini.
 
-
-
-                                                                                                                                                                                                                                                    */
+================================================================================================
+                                                                                                                                                                                                                                                     */
