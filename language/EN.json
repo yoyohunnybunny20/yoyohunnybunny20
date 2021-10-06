@@ -28,7 +28,7 @@
             "WARN": "Get plugins only from t.me/remasterplugin channel."
         },
         "admin": {
-            "BAN_DESC": "Ban someone in the group. Reply to message or tag a person to use command.",
+            "BAN_DESC": "Kick someone in the group. Reply to message or tag a person to use command.",
             "IM_NOT_ADMIN": "*I am not admin in this group!*",
             "USER_NOT_ADMIN": "*You are not an admin in this group!*",
             "SET_NAME_DESC": "Changes the group's name.",
@@ -44,12 +44,12 @@
             "DEMOTE_DESC": "Takes the authority of any admin.",
             "ALREADY_NOT_ADMIN": "```How can I make someone admin who is already admin?```",
             "DEMOTED": "```, has been demoted!```",
-            "MUTE_DESC": "Mute the group chat. Only the admins can send a message.",
-            "MUTED": "```Group chat muted!```",
-            "UNMUTE_DESC": "Unmute the group chat. Anyone can send a message.",
-            "UNMUTED": "```The group chat has unmuted!```",
+            "MUTE_DESC": "Close the group chat. Only the admins can send a message.",
+            "MUTED": "```The group chat has been Closed!```",
+            "UNMUTE_DESC": "Open the group chat. Anyone can send a message.",
+            "UNMUTED": "```The group chat has opened!```",
             "INVITE_DESC": "Provides the group's invitation link.",
-            "INVITE": "```Invitation link: ```"
+            "INVITE": "```Group Link: ```"
         },
         "afk": {
             "AFK_DESC": "It makes you AFK - Away From Keyboard.",
@@ -176,12 +176,12 @@
             "SONG_DESC": "Uploads the song you wrote.",
             "NEED_TEXT_SONG": "*Please write a song!*\n*Example:* ```.song eminem - rap god```",
             "NO_RESULT": "*I couldn't find anything :(*",
-            "DOWNLOADING_SONG": "*⦁═══🎧═══⦁*\n```Downloading your music...```\n*⦁═══🎧═══⦁*",
-            "UPLOADING_SONG": "*⦁═══🎧═══⦁*\n```Uploading your music...```\n*⦁═══🎧═══⦁*",
+            "DOWNLOADING_SONG": "*⦁══════🎧══════⦁*\n```Downloading your music...```\n*⦁══════🎧══════⦁*",
+            "UPLOADING_SONG": "*⦁══════🎧══════⦁*\n```Uploading your music...```\n*⦁══════🎧══════⦁*",
             "VIDEO_DESC": "Downloads video from YouTube.",
             "NEED_VIDEO": "*Please write a video link!*\n*Example:* ```.video https://www.youtube.com/watch?v=nAFlVm5qeBc```",
-            "DOWNLOADING_VIDEO": "*⦁═══📽═══⦁*\n```Downloading your video...```\n*⦁═══📽═══⦁*",
-            "UPLOADING_VIDEO": "*⦁═══📽═══⦁*\n```Uploading your video...```\n*⦁═══📽═══⦁*",
+            "DOWNLOADING_VIDEO": "*⦁══════📽══════⦁*\n```Downloading your video...```\n*⦁══════📽══════⦁*",
+            "UPLOADING_VIDEO": "*⦁══════📽══════⦁*\n```Uploading your video...```\n*⦁══════📽══════⦁*",
             "YT_DESC": "It searchs on YouTube.",
             "NEED_WORDS": "```Please write a few words!```",
             "GETTING_VIDEOS": "```I'm bringing videos...```",
