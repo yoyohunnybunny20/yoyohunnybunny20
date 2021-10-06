@@ -59,6 +59,8 @@ If you are concerned about security, you can install it on your own computer. If
   
 You can clear all of them, by **Joining Our Support Group**
 
+**[Click Here To Join Our Support Group](https://chat.whatsapp.com/DWw5dALGYXwHxUXdqsbdMi)**
+
 ### 📃 How Can I Download the Bot Script?
 
 You Can **[Click Here](https://github.com/TOXIC-DEVIL/WhatsAlexa/archive/refs/heads/master.zip)** To Download The **Bot Script**.. This Script is Free, So **Don't Sell This Script in High Price.**
@@ -99,7 +101,11 @@ No personal support will be provided / We won't spoon feed you.
 If you need help ask in our support group 
 and we will try to help you.
 ```
-  
+
+- **[Click Here to Join Our Support Group](https://chat.whatsapp.com/DWw5dALGYXwHxUXdqsbdMi)**
+
+- **[Click Here to Join Our Update Group](https://chat.whatsapp.com/DDOB1qSVIqEAzymaH5iLC4)**
+
 ## 👨‍💻 Developers & Contributors 👨‍💻
 
  [![TOXIC-DEVIL](https://github.com/TOXIC-DEVIL.png?size=100)](https://github.com/TOXIC-DEVIL) |
