@@ -58,7 +58,7 @@ WhatsAlexa.addCommand({pattern: 'update now$', fromMe: true, desc: Lang.UPDATE_N
             
             try {
                 await git.addRemote('heroku', git_url);
-            } catch { console.log('heroku remote ekli'); }
+            } catch { console.log('🔴 WhatsAlexa: Invalid HEROKU_APP_NAME or HEROKU_API_KEY! Please check and correct it.'); }
             await git.push('heroku', Config.BRANCH);
 
             await message.client.sendMessage(
