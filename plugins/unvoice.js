@@ -33,7 +33,7 @@ if (Config.WORKTYPE == 'private') {
     
     WhatsAlexa.addCommand({pattern: 'unaudio', fromMe: true, desc: Lang.UA_DESC}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.UA_REPLY, MessageType.text, message.data});
+        if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.UA_REPLY, MessageType.text, {contextInfo: { forwardingScore: 49, isForwarded: true }, quoted: message.data});
         var downloading = await message.client.sendMessage(message.jid,Lang.UA_PROC,MessageType.text, {contextInfo: { forwardingScore: 49, isForwarded: true }, quoted: message.data});
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
@@ -77,7 +77,7 @@ else if (Config.WORKTYPE == 'public') {
     
     WhatsAlexa.addCommand({pattern: 'unaudio', fromMe: false, desc: Lang.UA_DESC}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.UA_REPLY, MessageType.text, message.data});
+        if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.UA_REPLY, MessageType.text, {contextInfo: { forwardingScore: 49, isForwarded: true }, quoted: message.data});
         var downloading = await message.client.sendMessage(message.jid,Lang.UA_PROC,MessageType.text, {contextInfo: { forwardingScore: 49, isForwarded: true }, quoted: message.data});
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
