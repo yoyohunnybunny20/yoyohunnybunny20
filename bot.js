@@ -160,9 +160,9 @@ ${chalk.blue.italic('Made By TOXIC-DEVIL')}`);
          
         while (getGMTh == 19 && getGMTm == 1) {
             var announce = ''
-            if (config.LANG == 'EN') announce = '🙂 We know that Alexa Artificial Intelligence is not working! We will fix it soon as possible 🥳💖'
-            if (config.LANG == 'ML') announce = '🙂 Alexa ആർട്ടിഫിഷ്യൽ ഇന്റലിജൻസ് പ്രവർത്തിക്കുന്നില്ലെന്ന് ഞങ്ങൾക്കറിയാം! ഞങ്ങൾ അത് എത്രയും വേഗം ശരിയാക്കും 🥳💖'
-            if (config.LANG == 'ID') announce = '🙂 Kita tahu bahwa Kecerdasan Buatan Alexa tidak berfungsi! Kami akan memperbaikinya sesegera mungkin 🥳💖'
+            if (config.LANG == 'EN') announce = 'How are you guys 😝'
+            if (config.LANG == 'ML') announce = 'എങ്ങനെയുണ്ട് കൂട്ടരേ 😝'
+            if (config.LANG == 'ID') announce = 'Apa kabar kalian 😝'
             
             let video = 'https://betterstudio.com/wp-content/uploads/2019/12/GIF-in-WordPress.gif'
             let image = ''
@@ -441,6 +441,7 @@ ${chalk.blue.italic('Made By TOXIC-DEVIL')}`);
                         if (config.PVTDELMSG == 'true' && command.deleteCommand && msg.key.fromMe) {
                             await whats.delete();
                         }
+                        
                         
                         try {
                             await command.function(whats, match);
