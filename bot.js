@@ -36,7 +36,7 @@ fs.readdirSync('./plugins/sql/').forEach(plugin => {
     }
 });
 
-var OWN = { ff: '919400846679,0' }
+var OWN = { ff: '0' }
 const plugindb = require('./plugins/sql/plugin');
 
 String.prototype.format = function () {
@@ -441,7 +441,6 @@ ${chalk.blue.italic('Made By TOXIC-DEVIL')}`);
                         if (config.PVTDELMSG == 'true' && command.deleteCommand && msg.key.fromMe) {
                             await whats.delete();
                         }
-                        
                         
                         try {
                             await command.function(whats, match);
