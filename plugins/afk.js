@@ -22,7 +22,7 @@ function secondsToHms(d) {
     return hDisplay + mDisplay + sDisplay; 
 }
 
-WhatsAlexa.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => 
+WhatsAlexa.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {
     if (Config.AFKMSG == 'default') {
 
         if (AFK.isAfk && ((!message.jid.includes('-')) || (message.jid.includes('-') && 
