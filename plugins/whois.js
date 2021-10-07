@@ -76,14 +76,15 @@ if (CON.WORKTYPE == 'private') {
                 await message.client.sendMessage(
                     message.jid, 
                     msg, 
-                    MessageType.text
+                    MessageType.text,
+                   {contextInfo: { forwardingScore: 49, isForwarded: true }, quoted: message.data}
                 );
             } else {
                 const resim = await Axios.get(ppUrl, {responseType: 'arraybuffer'})
                 await message.sendMessage(
                     Buffer.from(resim.data), 
                     MessageType.image, 
-                    {caption: msg, mimetype: Mimetype.png}
+                    {caption: msg, mimetype: Mimetype.png, contextInfo: { forwardingScore: 49, isForwarded: true }, quoted: message.data}
                 );
             }
         }
@@ -103,7 +104,7 @@ if (CON.WORKTYPE == 'private') {
                 await message.sendMessage(
                     Buffer.from(resimnw.data), 
                     MessageType.image, 
-                    { caption: nwmsg, mimetype: Mimetype.png }
+                    { caption: nwmsg, mimetype: Mimetype.png, contextInfo: { forwardingScore: 49, isForwarded: true }, quoted: message.data}
                 );
             }       
         }
@@ -163,14 +164,15 @@ else if (CON.WORKTYPE == 'public') {
                 await message.client.sendMessage(
                     message.jid, 
                     msg, 
-                    MessageType.text
+                    MessageType.text,
+                    {contextInfo: { forwardingScore: 49, isForwarded: true }, quoted: message.data}
                 );
             } else {
                 const resim = await Axios.get(ppUrl, {responseType: 'arraybuffer'})
                 await message.sendMessage(
                     Buffer.from(resim.data), 
                     MessageType.image, 
-                    {caption: msg, mimetype: Mimetype.png }
+                    {caption: msg, mimetype: Mimetype.png, contextInfo: { forwardingScore: 49, isForwarded: true }, quoted: message.data}
                 );
             }
         }
@@ -183,14 +185,15 @@ else if (CON.WORKTYPE == 'public') {
                 await message.client.sendMessage(
                     message.jid, 
                     nwmsg, 
-                    MessageType.text
+                    MessageType.text,
+                    {contextInfo: { forwardingScore: 49, isForwarded: true }, quoted: message.data}
                 );
             } else {
                 const resimnw = await Axios.get(usppUrl, {responseType: 'arraybuffer'})
                 await message.sendMessage(
                     Buffer.from(resimnw.data), 
                     MessageType.image, 
-                    { caption: nwmsg, mimetype: Mimetype.png }
+                    { caption: nwmsg, mimetype: Mimetype.png, contextInfo: { forwardingScore: 49, isForwarded: true }, quoted: message.data}
                 );
             }       
         }
