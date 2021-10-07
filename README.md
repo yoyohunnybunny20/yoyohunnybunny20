@@ -112,5 +112,3 @@ Author: Developer, Base, Bug Fixes, Commits, Modules |
 - [x] Alexa Voice Chatbot [ This is not amazon alexa ]
 
 - [x] simi simi chatbot
-
-- [ ] Replika chatbot
