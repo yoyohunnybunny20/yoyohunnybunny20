@@ -294,7 +294,7 @@ if (conf.LANG == 'ID') {
 
 WhatsAlexa.addCommand({ pattern: 'fullalexa ?(.*)', desc: fullalexa_dsc, fromMe: true}, (async (message, match) => {
     if (match[1] == 'on') {
-        if (eva_functionality == 'true') {
+        if (alexa_functionality == 'true') {
             return await message.client.sendMessage(message.jid, '*' + already_on + '*', MessageType.text)
         }
         else {
@@ -307,7 +307,7 @@ WhatsAlexa.addCommand({ pattern: 'fullalexa ?(.*)', desc: fullalexa_dsc, fromMe:
         }
     }
     else if (match[1] == 'off') {
-        if (eva_functionality !== 'true') {
+        if (alexa_functionality !== 'true') {
             return await message.client.sendMessage(message.jid, '*' + already_off + '*', MessageType.text)
         }
         else {
