@@ -41,10 +41,10 @@ if (Config.LANG == 'ID') warning = 'Kami tidak bertanggung jawab atas segala aki
                     } else {
                         HANDLER = '.';
                     }
-                    CMD_HELP += '*➣* ```' + (match.length >= 3 ? (HANDLER + match[2]) : command.pattern) + (command.desc === '' ? '```\n\n' : '```\n\n');
-                    if (command.desc !== '') CMD_HELP += '*➢ :* ```' + command.desc + (command.warn === '' ? '```\n\n' : '```\n\n');
-                    if (command.usage !== '') CMD_HELP += '*➾ ' + Lang.EXAMPLE + ':* ```' + command.usage + '```\n\n';
-                    if (command.warn !== '') CMD_HELP += '*⚠ ' + Lang.WARN + ':* ```' + command.warn + '```\n\n\n';
+                    CMD_HELP += '*🎯 ' + Lang.COMMAND + ':* ```' + (match.length >= 3 ? (HANDLER + match[2]) : command.pattern) + (command.desc === '' ? '```\n\n' : '```\n');
+                    if (command.desc !== '') CMD_HELP += '*📝 ' + Lang.DESC + ':* ```' + command.desc + (command.warn === '' ? '```\n\n' : '```\n');
+                    if (command.usage !== '') CMD_HELP += '*⌨️ ' + Lang.EXAMPLE + ':* ```' + command.usage + '```\n\n';
+                    if (command.warn !== '') CMD_HELP += '*⚠️ ' + Lang.WARN + ':* ```' + command.warn + '```\n\n';
 
                 }
             );
@@ -71,10 +71,11 @@ if (Config.LANG == 'ID') warning = 'Kami tidak bertanggung jawab atas segala aki
                         } else {
                             HANDLER = '.';
                         }
-                        CMD_HELP += '*➣* ```' + (match.length >= 3 ? (HANDLER + match[2]) : command.pattern) + (command.desc === '' ? '```\n\n' : '```\n\n');
-                        if (command.desc !== '') CMD_HELP += '*➢ :* ```' + command.desc + (command.warn === '' ? '```\n\n' : '```\n\n');
-                        if (command.usage !== '') CMD_HELP += '*➾ ' + Lang.EXAMPLE + ':* ```' + command.usage + '```\n\n';
-                        if (command.warn !== '') CMD_HELP += '*⚠ ' + Lang.WARN + ':* ```' + command.warn + '```\n\n\n';
+                        CMD_HELP += '*🎯 ' + Lang.COMMAND + ':* ```' + (cmatch.length >= 3 ? (HANDLER + cmatch[2]) : command.pattern) + (command.desc === '' ? '```\n\n' : '```\n');
+                        if (command.desc !== '') CMD_HELP += '*📝 ' + Lang.DESC + ':* ```' + command.desc + (command.warn === '' ? '```\n\n' : '```\n');
+                        if (command.usage !== '') CMD_HELP += '*⌨️ ' + Lang.EXAMPLE + ':* ```' + command.usage + '```\n\n';
+                        if (command.warn !== '') CMD_HELP += '*⚠️ ' + Lang.WARN + ':* ```' + command.warn + '```\n\n';
+
                     }
                 }
             );
