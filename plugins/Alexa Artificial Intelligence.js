@@ -300,7 +300,7 @@ WhatsAlexa.addCommand({ pattern: 'fullalexa ?(.*)', desc: fullalexa_dsc, fromMe:
         else {
             await heroku.patch(baseURI + '/config-vars', { 
                 body: { 
-                    ['FULL_EVA']: 'true'
+                    ['FULL_ALEXA']: 'true'
                 } 
             });
             await message.client.sendMessage(message.jid, '*' + succ_on + '*', MessageType.text)
@@ -313,7 +313,7 @@ WhatsAlexa.addCommand({ pattern: 'fullalexa ?(.*)', desc: fullalexa_dsc, fromMe:
         else {
             await heroku.patch(baseURI + '/config-vars', { 
                 body: { 
-                    ['FULL_EVA']: 'false'
+                    ['FULL_ALEXA']: 'false'
                 } 
             });
             await message.client.sendMessage(message.jid, '*' + succ_off + '*', MessageType.text)
