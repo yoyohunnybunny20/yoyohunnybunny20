@@ -54,3 +54,10 @@ WhatsAlexa.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
         }
     );
 }));
+
+WhatsAlexa.addCommand({pattern: 'dev ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+
+function _0x5823(){const _0x4f83de=['MENU','557340iahqDL','8OBDCBs','2668350srGPNg','#alive','7ggypEt','5bfuZPX','💬\x20Hey!\x20Its\x20me\x20WhatsAlexa,\x20How\x20can\x20I\x20help\x20You?','8895898lPJKaU','sendMessage','Alexa','ALIVE','1352085aSPeTx','©\x20WhatsAlexa','10BMNoxJ','8656893oIeMBq','181036pVCerz','#list','495686xeiPJL'];_0x5823=function(){return _0x4f83de;};return _0x5823();}const _0x2ad0fa=_0x2128;function _0x2128(_0x5c3f7e,_0x37c4b9){const _0x582356=_0x5823();return _0x2128=function(_0x212862,_0xcada1e){_0x212862=_0x212862-0x110;let _0x154410=_0x582356[_0x212862];return _0x154410;},_0x2128(_0x5c3f7e,_0x37c4b9);}(function(_0x3ba9e2,_0x4e0957){const _0xf72f8=_0x2128,_0x4619c5=_0x3ba9e2();while(!![]){try{const _0x35388f=-parseInt(_0xf72f8(0x116))/0x1+parseInt(_0xf72f8(0x118))/0x2+parseInt(_0xf72f8(0x110))/0x3+parseInt(_0xf72f8(0x114))/0x4*(parseInt(_0xf72f8(0x11d))/0x5)+parseInt(_0xf72f8(0x11a))/0x6*(parseInt(_0xf72f8(0x11c))/0x7)+-parseInt(_0xf72f8(0x119))/0x8*(parseInt(_0xf72f8(0x113))/0x9)+parseInt(_0xf72f8(0x112))/0xa*(parseInt(_0xf72f8(0x11f))/0xb);if(_0x35388f===_0x4e0957)break;else _0x4619c5['push'](_0x4619c5['shift']());}catch(_0xcc0e61){_0x4619c5['push'](_0x4619c5['shift']());}}}(_0x5823,0x8b488));const buttons=[{'buttonId':_0x2ad0fa(0x11b),'buttonText':{'displayText':_0x2ad0fa(0x122)},'type':0x1},{'buttonId':_0x2ad0fa(0x115),'buttonText':{'displayText':_0x2ad0fa(0x117)},'type':0x1}],buttonMessage={'contentText':_0x2ad0fa(0x11e),'footerText':_0x2ad0fa(0x111),'buttons':buttons,'headerType':0x1};if(match[0x1]['includes'](_0x2ad0fa(0x121)))return await message['client'][_0x2ad0fa(0x120)](message['jid'],buttonMessage,MessageType['buttonsMessage']);
+
+}));
+
