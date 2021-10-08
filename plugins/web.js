@@ -15,7 +15,7 @@ if (Config.WORKTYPE == 'private') {
        var end = new Date().getTime();
 
        await message.client.sendMessage(
-         message.jid,'*WhatsAlexa Ping -* ```' + (end - start) + 'ms```\n\n', MessageType.text, {contextInfo: { forwardingScore: 49, isForwarded: true }, quoted: message.data});
+         message.jid,'\n\n*WhatsAlexa Ping -* ```' + (end - start) + 'ms```\n\n', MessageType.text, {contextInfo: { forwardingScore: 49, isForwarded: true }, quoted: message.data});
     }));
 
     WhatsAlexa.addCommand({pattern: 'short ?(.*)', fromMe: true, desc: Lang.URL}, (async (message, match) => {
@@ -38,7 +38,7 @@ else if (Config.WORKTYPE == 'public') {
        var end = new Date().getTime();
 
        await message.client.sendMessage(
-         message.jid,'*WhatsAlexa Ping -* ```' + (end - start) + 'ms```\n\n', MessageType.text, {contextInfo: { forwardingScore: 49, isForwarded: true }, quoted: message.data});
+         message.jid,'\n\n*WhatsAlexa Ping -* ```' + (end - start) + 'ms```\n\n', MessageType.text, {contextInfo: { forwardingScore: 49, isForwarded: true }, quoted: message.data});
     }));
 
     WhatsAlexa.addCommand({pattern: 'short ?(.*)', fromMe: false, desc: Lang.URL}, (async (message, match) => {
