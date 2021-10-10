@@ -96,8 +96,7 @@ and you ended up in being fight with WhatsApp
 and at the end WhatsApp Team deleted your account. DON'T BLAME US.
 
 No personal support will be provided / We won't spoon feed you. 
-If you need help ask in our support group 
-and we will try to help you.
+If you need help you can ask to [TOXIC DEVIL](https://wa.me/919400846679).
 ```
 
 ## 👨‍💻 Developers & Contributors 👨‍💻
