@@ -1,12 +1,12 @@
-FROM |\|<>o|€:15.11.0-/-\|][D1/|/&drei.10
+FROM node:15.11.0-alpine3.10
 
-RUN 4|>|( ^Ð<| 6][† 1!|>|/|/3|>9-†091$ |"ƒ]V[][D£6-|_l|3? |"ƒ/\/\|>£9
+RUN apk add git libwebp-tools ffmpeg-libs ffmpeg
 
-RUN 9]['][' (|_*|\|€ }{†']['95://617|-|µ|o.[9|11/TOXIC-DEVIL/W#/-\+?A13)(@ /|?9*7/W#q7$A1&)(4
-WORKDIR /|2<>°7/W|-|^7?A13%^/
+RUN git clone https://github.com/TOXIC-DEVIL/WhatsAlexa /root/WhatsAlexa
+WORKDIR /root/WhatsAlexa/
 
-ENV TZ=Eµ?<>|D3/I57λ|1l³µ£
-RUN 2|°^^ !11§7∂|_| ?|_|][D£1²\||$<>® -6
-RUN /qя/\\/ l/|/$†/\|_1 --/|/()-q[_]<||†
+ENV TZ=Europe/Istanbul
+RUN npm install supervisor -g
+RUN yarn install --no-audit
 
-CMD ["|\|*Ð€", "l³<>7._|§"]
+CMD ["node", "bot.js"]
