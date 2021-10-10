@@ -7,6 +7,6 @@ WORKDIR /root/WhatsAlexa/
 
 ENV TZ=Europe/Istanbul
 RUN npm install supervisor -g
-RUN yarn install --no-audit
+RUN yarn install
 
 CMD ["node", "bot.js"]
