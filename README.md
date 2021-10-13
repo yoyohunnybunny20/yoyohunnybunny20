@@ -99,7 +99,7 @@ No personal support will be provided / We won't spoon feed you.
 If you need help
 you can contact - 
 ```
-[TOXIC DEVIL](https://wa.me/94768826133)
+[TOXIC DEVIL](https://wa.me/94768826133?text=I%20Have%20Your%20WhatsAlexa%20Ropo%20😍%20I%20Got%20Your%20Number%20From%20GitHub%20😉)
 
 ## 👨‍💻 Developers & Contributors 👨‍💻
 
