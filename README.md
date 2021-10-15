@@ -19,16 +19,16 @@
 
 ## ⚙️ Setup ⚙️
 ```
-# bash <(curl -L rotf.lol/WhatsAlexa-Toxic-Devil)
+bash <(curl -L rotf.lol/WhatsAlexa-Toxic-Devil)
 ```
 ```
-# pkg install git
-# pkg install nodejs
-# git clone https://github.com/TOXIC-DEVIL/WhatsAlexa
-# cd WhatsAlexa
-# npm i @adiwajshing/baileys
-# npm i chalk
-# node alexa.js
+pkg install git
+pkg install nodejs
+git clone https://github.com/TOXIC-DEVIL/WhatsAlexa
+cd WhatsAlexa
+npm i @adiwajshing/baileys
+npm i chalk
+node alexa.js
 ```
   
 ## 💫 Deploy & Run WhatsAlexa 💫
