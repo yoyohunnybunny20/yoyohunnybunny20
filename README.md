@@ -3,7 +3,6 @@
 
 # [![Typing SVG](https://bit.ly/3tSyaJK)](https://github.com/TOXIC-DEVIL)
 
-
 <div align="center">
   <img src="https://rotf.lol/Whats-Alexa-Gif-TOXIC-DEVIL" width="200" height="200">
   <h1>WhatsAlexa</h1>
