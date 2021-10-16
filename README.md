@@ -12,6 +12,7 @@
     <br>
      <img src="https://img.shields.io/github/repo-size/TOXIC-DEVIL/WhatsAlexa?color=green&label=Repo%20total%20size&style=plastic">
 
+
 <p align="center">
 <a href="https://github.com/TOXIC-DEVIL/WhatsAlexa/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/TOXIC-DEVIL/WhatsAlexa?color=blue&style=flat-square"></a>
 <a href="https://github.com/TOXIC-DEVIL/WhatsAlexa/network/members"><img title="Forks" src="https://img.shields.io/github/forks/TOXIC-DEVIL/WhatsAlexa?color=pink&style=flat-square"></a>
