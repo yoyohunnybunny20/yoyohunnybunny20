@@ -14,7 +14,7 @@
 
 ----
 <p align="center">
-  <a href="httsp://github.com/TOXIC-DEVIL/WhatsAlexa">
+  <a href="https://github.com/TOXIC-DEVIL/WhatsAlexa">
     <img src="https://img.shields.io/docker/pulls/node/15.2.0-alpine3.10?style=flat-square&label=Docker+Pulls+(Active+User+Count)">
   </a>
   <a
