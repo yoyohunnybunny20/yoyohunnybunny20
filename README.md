@@ -88,8 +88,8 @@ There are **50+** Features/Commands Are there in **this bot!**
 ## ❗️ Disclaimer ❗️
 
 The name **'WhatsAlexa'**, Which includes the word
-**'Whats'**, confuses users because of the name of the familiar name
-of the bot **WhatsAsena**. The users are thinking that the
+**'Whats'**, confuses users because of the name of the familiar
+bot **WhatsAsena**. The users are thinking that the
 **'WhatsAlexa' bot is a modified version of the 'WhatsAsena'**.
 This is **extremely wrong** and has nothing to do with WhatsAsena.
 Also You can check our docker file.
