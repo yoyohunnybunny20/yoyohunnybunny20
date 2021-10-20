@@ -58,43 +58,15 @@ const convertToWav = file => {
         .format('wav')
         .save('output.wav')
 }
-var alexa_functionality = ''
-async function alexa_functionality_f() {
-    await heroku.get(baseURI + '/config-vars').then(async (vars) => {
-        alexa_functionality = vars.FULL_ALEXA
-    });
-}
-alexa_functionality_f()
 
 WhatsAlexa.addCommand({on: 'text', fromMe: wk, dontAddCommandList: true, deleteCommand: false}, (async (message, match) => {
     if (message.message.startsWith('Alexa') && conf.FULLALEXA !== 'true') {        
-        var unique_ident = ''
-        if (conf.WORKTYPE == 'private') {
-            unique_ident = message.client.user.jid.split('@')[0]
-        } else if (conf.WORKTYPE == 'public') {
-            unique_ident = message.client.user.jid.split('@')[0] + 'PUBLIC' + message.data.participant.split('@')[0]
-        }
+        var unique_ident = message.client.user.jid.split('@')[0]      
         let acc = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0] == 'Asena' ? '7d57838203msh0c5cf65c90a7231p13b461jsn77c8cfa55871' : '7d57838203msh0c582jak19865261js1229n77c8cfa55871'
-        let aitalk_mode = ''
-        if (message.message.includes('{normal}')) {
-            aitalk_mode = 'raw'
-        } else if (message.message.includes('{humanoid}')) {
-            aitalk_mode = 'human'
-        } else if (message.message.includes('{anime}')) {
-            aitalk_mode = 'waifu'
-        } else if (message.message.includes('{robot}')) {
-            aitalk_mode = 'robo'
-        } else if (message.message.includes('{private}')) {
-            aitalk_mode = 'secret'
-        }
-        var finm = ''
-        if (conf.WORKTYPE == 'private') {
-            finm = message.message.replace('Alexa', '').replace(' ', '')
-        } else if (conf.WORKTYPE == 'public') {
-            finm = message.message.replace('Alexa', '').replace(' ', '').replace('@' + message.client.user.jid.split('@')[0], '')
-        }
+        let aitalk_mode = message.message.includes('{normal}') ? 'raw' : 'waifu'
+        var finm = message.message.replace('whitedevil', '').replace(' ', '')   
         var ainame = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0]
-        if (ainame !== 'Asena') return;
+        // if (ainame !== 'Asena') return;
         var ldet = lngDetector.detect(finm)
         var trmsg = ''
         if (ldet[0][0] !== 'english') {
@@ -122,12 +94,11 @@ WhatsAlexa.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async 
             if (message.jid.includes('-') && (message.mention !== false && message.mention.length !== 0)) {
                 message.mention.map(async (jid) => {
                     if (message.client.user.jid.split('@')[0] === jid.split('@')[0]) {
-                        var unique_ident = ''
-                        unique_ident = message.client.user.jid.split('@')[0] + 'PUBLIC' + message.data.participant.split('@')[0]
+                        var unique_ident = message.client.user.jid.split('@')[0]      
                         let acc = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0] == 'Asena' ? '7d57838203msh0c5cf65c90a7231p13b461jsn77c8cfa55871' : '7d57838203msh0c582jak19865261js1229n77c8cfa55871'
                         let aitalk_mode = message.message.includes('{normal}') ? 'raw' : 'waifu'                       
                         var ainame = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0]
-                        if (ainame !== 'Asena') return;
+                        // if (ainame !== 'Asena') return;
                         var finm = message.message
                         var ldet = lngDetector.detect(finm)
                         var trmsg = ''
@@ -152,11 +123,10 @@ WhatsAlexa.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async 
                 })
             } else if (message.jid.includes('-') && message.reply_message !== false) {
                 if (message.reply_message.jid.split('@')[0] === message.client.user.jid.split('@')[0]) {
-                    var unique_ident = ''
-                    unique_ident = message.client.user.jid.split('@')[0] + 'PUBLIC' + message.data.participant.split('@')[0]
+                    var unique_ident = message.client.user.jid.split('@')[0]      
                     let acc = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0] == 'Asena' ? '7d57838203msh0c5cf65c90a7231p13b461jsn77c8cfa55871' : '7d57838203msh0c582jak19865261js1229n77c8cfa55871'
                     var ainame = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0]
-                    if (ainame !== 'Asena') return;
+                    // if (ainame !== 'Asena') return;
                     var finm = message.message
                     var ldet = lngDetector.detect(finm)
                     var trmsg = ''
@@ -179,11 +149,10 @@ WhatsAlexa.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async 
                     })
                 }
             } else {
-                var unique_ident = ''
-                unique_ident = message.client.user.jid.split('@')[0] + 'PUBLIC' + message.data.participant.split('@')[0]     
+                var unique_ident = message.client.user.jid.split('@')[0]      
                 let acc = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0] == 'Asena' ? '7d57838203msh0c5cf65c90a7231p13b461jsn77c8cfa55871' : '7d57838203msh0c582jak19865261js1229n77c8cfa55871'
                 var ainame = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0]
-                if (ainame !== 'Asena') return;
+                // if (ainame !== 'Asena') return;
                 var finm = message.message
                 var ldet = lngDetector.detect(finm)
                 var trmsg = ''
@@ -221,22 +190,18 @@ WhatsAlexa.addCommand({ pattern: 'voicechat$', desc: voicechat_dsc, fromMe: wk }
         
         convertToWav(file)
             .on('end', async () => {
-                const recognizedText = await recognizeAudio()           
+                const recognizedText = await recognizeAudio()
+                
                 var ssc = ''
                 ceviri = await translatte(recognizedText, {from: 'auto', to: 'EN' });
                 if ('text' in ceviri) {
                     ssc = ceviri.text
                 }
-                var unique_ident = ''
-                if (conf.WORKTYPE == 'private') {
-                    unique_ident = message.client.user.jid.split('@')[0]
-                } else if (conf.WORKTYPE == 'public') {
-                    unique_ident = message.client.user.jid.split('@')[0] + 'PUBLIC' + message.data.participant.split('@')[0]
-                }
+                var unique_ident = message.client.user.jid.split('@')[0]
                 let acc = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0] == 'Asena' ? '7d57838203msh0c5cf65c90a7231p13b461jsn77c8cfa55871' : '7d57838203msh0c582jak19865261js1229n77c8cfa55871'       
                 var ainame = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0]
-                if (ainame !== 'Asena') return;
-
+                // if (ainame !== 'Asena') return;
+        
                 var son = encodeURI(ssc)
                 await axios.get('http://api.brainshop.ai/get?bid=159310&key=NDt0qonsqmI26p9r&uid=' + unique_ident + '&msg=' + son).then(async (response) => {
                     var trmsg = ''
@@ -244,7 +209,7 @@ WhatsAlexa.addCommand({ pattern: 'voicechat$', desc: voicechat_dsc, fromMe: wk }
                     if ('text' in cevir) {
                         trmsg = cevir.text
                     }
-
+            
                     let 
                         LANG = conf.LANG.toLowerCase(),
                         ttsMessage = trmsg,
@@ -253,7 +218,7 @@ WhatsAlexa.addCommand({ pattern: 'voicechat$', desc: voicechat_dsc, fromMe: wk }
                         text: ttsMessage,
                         voice: LANG
                     });
-
+            
                     await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true, quoted: message.data})
                 }).catch(async (error) => {
 	            console.log(error)
@@ -294,7 +259,7 @@ if (conf.LANG == 'ID') {
 
 WhatsAlexa.addCommand({ pattern: 'fullalexa ?(.*)', desc: fullalexa_dsc, fromMe: true}, (async (message, match) => {
     if (match[1] == 'on') {
-        if (alexa_functionality == 'true') {
+        if (conf.FULLALEXA == 'true') {
             return await message.client.sendMessage(message.jid, '*' + already_on + '*', MessageType.text)
         }
         else {
@@ -307,7 +272,7 @@ WhatsAlexa.addCommand({ pattern: 'fullalexa ?(.*)', desc: fullalexa_dsc, fromMe:
         }
     }
     else if (match[1] == 'off') {
-        if (alexa_functionality !== 'true') {
+        if (conf.FULLALEXA !== 'true') {
             return await message.client.sendMessage(message.jid, '*' + already_off + '*', MessageType.text)
         }
         else {
