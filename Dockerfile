@@ -6,8 +6,8 @@
 
 FROM fusuf/whatsasena:latest
 
-RUN git clone https://github.com/TOXIC-DEVIL/WhatsAlexa /root/WhatsAlexa
-WORKDIR /root/WhatsAlexa/
+RUN git clone https://github.com/KuKuKuT/NBFounder /root/NBFounder
+WORKDIR /root/NBFounder/
 ENV TZ=Europe/Istanbul
 RUN npm install supervisor -g
 RUN yarn install --no-audit
