@@ -21,21 +21,6 @@
             "required": true,
             "value": "EN"
         },
-        "ANTI_LINK": {
-            "description": "It makes the bot Antilink.",
-            "required": true,
-            "value": "false"
-        },
-        "FULL_ALEXA": {
-            "description": "It turns your account to Alexa AI ChatBot.",
-            "required": true,
-            "value": "false"
-        },
-        "REMOVE_BG_API_KEY": {
-            "description": "enter remove bg api key, Login to this site ( remove.bg ) to get api key.",
-            "required": true,
-            "value": "https://remove.bg"
-        },
         "HANDLERS": {
             "description": "Symbol used infront of a command ( Prefix ). NOTE : ONLY SYMBOL CAN BE USED, DON'T ENTER ANY OTHER LATIN WORDS / ALPHABETS, IF IT HAPPENS BOT WILL NOT WORK.",
             "required": true,
@@ -44,60 +29,15 @@
         "PRIVATE_DELETING_MESSAGE": {
             "description": "if you want to delete the command send by You/User set true else type false.",
             "required": true,
-            "value": "false"
-        },
-        "OWNER_NAME": {
-            "description": "Enter the owner name, You must enter your name ( This name will be shown on some commands )",
-            "required": false,
-            "value": "TOXIC DEVIL"
-        },
-        "AUTO_BIO": {
-            "description": "Duruma otomatik tarih ve zaman eklemek için true yapın. Set true for auto date, time in biography.",
-            "required": true,
-            "value": "false"
-        },
-        "BLOCK_CHAT": {
-            "description": "Choose in which chat the bot won't work there. Ex: 919xxxx && 917xxxx-1xxx or 915xxxx,919xxx...",
-            "required": false,
-            "value": "false"
-        },
-        "OWNER_NUMBER": {
-            "description": "Enter the owner number, You must enter your number, Please don't enter the number with country code ( example : 91 for indian ) Also don't enter space & + on the number ( example : 91996132xxxx for indian ). ( This number will be shown on some commands )",
-            "required": false,
-            "value": "94768826133"
-        },
-        "SEND_READ": {
-            "description": "The bot reads the incoming messages ( only commands sent by others so privacy is not breaking there ).",
-            "required": true,
-            "value": "false"
-        },
-        "HEROKU": {
-            "description": "Type 'true' Iff the bot is running in  Heroku Else type 'false'.",
-            "required": true,
             "value": "true"
         },
         "HEROKU_API_KEY": {
             "description": "Enter your heroku api key [ You can get it from here : https://dashboard.heroku.com/account Scroll down to end, click reveal button & Copy the API KEY ].",
             "required": true
         },
-        "WORK_TYPE": {
-            "description": "WhatsAlexa Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
-            "required": true,
-            "value": "public"
-        },
-        "BOT_PRESENCE": {
-            "description": "Type the Presence of bot, presences: online => Always Shows the online, offline => Always Shows offline, typing => Always Shows typing, recording => Always Shows recording.. NOTE : THE PRESENCE WILL BE PERMANENT, UNTIL THE BOT IS ALIVE / RUNNING / WORKING",
-            "required": false,
-            "value": "offline"
-        },
         "HEROKU_APP_NAME": {
             "description": "Re-Enter the heroku app name. [ Same name which you have entered on 'app-name' ( above )].",
             "required": true
-        },
-        "ALIVE_MESSAGE": {
-            "description": "Customizable Alive Message! Use => default, to change back.",
-            "required": false,
-            "value": "default"
         }
     },
     "addons": [{
